@@ -4,17 +4,54 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,inital-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Название сайта</title>
-  <link rel="preload" href="fonts/fontname.woff2" as="font" crossorigin="anonymous">
+  <title>Jewellery - магазин ювелирных украшений</title>
+  <link rel="preload" href="fonts/Poppinsregular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 <div class="site-wrapper">
   <header class="page-header">
-
+    <div class="page-header__burger">
+      <img class="burger" src="img/burger-icon.svg" alt="Открыть меню">
+    </div>
+    <div class="page-header__search search">
+      <form class="search__form" action="/" method="POST" enctype="text/plain">
+        <input name="search" type="text" placeholder="Type here to search">
+      </form>
+    </div>
+    <div class="page-header__logo logo">
+      <a class="logo__link" href="/" aria-label="Ссылка на главную страницу">
+        <img class="logo__img" src="img/logo-header.svg" alt="Логотип Jewellery">
+      </a>
+    </div>
+    <div class="page-header__login login-header">
+      <a class="login-header__link">Login</a>
+    </div>
+    <div class="page-header__cart cart-header">
+      <a class="cart-header__link">Cart <span class="cart-header__counter">0</span></a>
+    </div>
+    <div class="page-header__menu">
+      <ul class="main-menu">
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="/">What’s new</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="/catalog.html">Chokers</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="/catalog.html">Necklaces</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="/catalog.html">Rings</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="/catalog.html">Earrings</a>
+        </li>
+      </ul>
+    </div>
   </header>
   <main>
-    <h1 class="visually-hidden">Заголовок первого уровня</h1>
+    <h1 class="visually-hidden">Jewellery - магазин ювелирных украшений</h1>
 
   </main>
   <footer class="page-footer">
