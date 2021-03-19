@@ -1,9 +1,69 @@
 @font-face {
-  font-family: "Font Name";
+  font-family: "Cormorant Garamond";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 
-  src: url("../fonts/fontname.woff2") format("woff2"),
-    url("../fonts/fontname.woff") format("woff");
+  src: url("../fonts/Cormorant_Garamond/Cormorantgaramond.woff2") format("woff2"),
+    url("../fonts/Cormorant_Garamond/Cormorantgaramond.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+
+  src: url("../fonts/Cormorant_Garamond/Cormorantgaramonditalic.woff2") format("woff2"),
+    url("../fonts/Cormorant_Garamond/Cormorantgaramonditalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+
+  src: url("../fonts/Cormorant_Garamond/Cormorantgaramondbold.woff2") format("woff2"),
+    url("../fonts/Cormorant_Garamond/Cormorantgaramondbold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+
+  src: url("../fonts/Cormorant_Garamond/Cormorantgaramondsemibold.woff2") format("woff2"),
+    url("../fonts/Cormorant_Garamond/Cormorantgaramondsemibold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+
+  src: url("../fonts/Cormorant_Garamond/Cormorantgaramondbookitalic.woff2") format("woff2"),
+    url("../fonts/Cormorant_Garamond/Cormorantgaramondbookitalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+
+  src: url("../fonts/Poppins/Poppinsregular.woff2") format("woff2"),
+    url("../fonts/Poppins/Poppinsregular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+
+  src: url("../fonts/Poppins/Poppinspoppins-semiboldmedium.woff2") format("woff2"),
+    url("../fonts/Poppins/Poppinspoppins-semiboldmedium.woff") format("woff");
 }

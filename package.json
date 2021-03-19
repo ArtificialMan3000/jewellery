@@ -1,8 +1,8 @@
 {
-  "name": "project-name",
+  "name": "jewellery",
   "version": "16.0.0",
   "private": true,
-  "description": "Описание проекта",
+  "description": "Интернет-магазин ювелирных украшений",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
