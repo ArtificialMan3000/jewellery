@@ -1,32 +1,27 @@
 //Breakpoints
-$mobile-width: 320px;
-$tablet-width: 768px;
-$desktop-width: 1300px;
+$desktop-width-max: 1366px;
+$desktop-width-min: 1024px;
+$tablet-width-max: 1023px;
+$tablet-width-min: 768px;
+$mobile-width-max: 767px;
+$mobile-width-min: 320px;
 
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
-
-//Content widthes
-$mobile-content-width: 280px;
-$tablet-content-width: 708px;
-$desktop-content-width: 1220px;
 
 //Font
 $title-font-family: "Cormorant Garamond", "Times New Roman", sans-serif;
 $text-font-family: "Poppins", "Arial", sans-serif;
 
-$text-font-size: 14px;
-$text2-font-size: 16px;
-$small-font-size: 12px;
-$title1-font-size: 36px;
-$title2-font-size: 24px;
-$title3-font-size: 16px;
+$text-font-size: 16px;
+$small-font-size: 14px;
+$h2-font-size: 34px;
 
-$text-line-height: 18px;
-$text2-line-height: 24px;
+$text-line-height: 130%;
+
 
 //Colors
-$brand-color: #68b738;
+$brand-color: #a87b62;
 $brand-color-dark: #64a83b;
 
 $title-color: #111111;
@@ -34,9 +29,10 @@ $title-color2: #222222;
 $text-color: #444444;
 
 $white: #ffffff;
-$gray-light: #f2f2f2;
+$black: #000000;
+$text-black: #1d1613;
 
 //Sizes
-$mobile-external-paddings: 20px;
-$tablet-external-paddings: 30px;
-$desktop-external-paddings: 40px;
+$mobile-external-paddings: 15px;
+$tablet-external-paddings: 45px;
+$desktop-external-paddings: 98px;
