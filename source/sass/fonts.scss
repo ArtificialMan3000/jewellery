@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Font Name";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+
+  src: url("../fonts/fontname.woff2") format("woff2"),
+    url("../fonts/fontname.woff") format("woff");
+}
