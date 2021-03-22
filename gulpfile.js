@@ -17,6 +17,7 @@ var include = require("posthtml-include");
 var del = require("del");
 var uglify = require("gulp-uglify");
 var htmlmin = require("gulp-htmlmin");
+var concat = require('gulp-concat');
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -52,7 +53,7 @@ gulp.task("webp", function () {
 gulp.task("sprite", function () {
   return gulp.src("source/img/sprite-*.svg")
     .pipe(svgstore({inlineSvg: true}))
-    .pipe(rename("sprite.svg"))
+    .pipe(rename("sprite_auto.svg"))
     .pipe(gulp.dest("source/img"));
 });
 
@@ -65,13 +66,24 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"));
 });
 
-gulp.task("js", function () {
-  return gulp.src("source/js/**/*.js")
-    .pipe(uglify())
-    .pipe(rename(function (path) {
-      path.extname = ".min.js";
-    }))
-    .pipe(gulp.dest("build/js"));
+// gulp.task("js", function () {
+//   return gulp.src("source/js/**/*.js")
+//     .pipe(uglify())
+//     .pipe(rename(function (path) {
+//       path.extname = ".min.js";
+//     }))
+//     .pipe(gulp.dest("build/js"));
+// });
+
+gulp.task('js', function (done) {
+  gulp.src(['source/js/vendor/*.js', 'source/js/menu.js', 'source/js/main.js'])
+      .pipe(concat('script.js'))
+      .pipe(uglify())
+      .pipe(rename(function (path) {
+        path.extname = ".min.js";
+      }))
+      .pipe(gulp.dest('build/js'));
+  done();
 });
 
 gulp.task("copy", function () {
@@ -96,6 +108,7 @@ gulp.task("server", function () {
     notify: false,
     open: true,
     cors: true,
+    port: '3004',
     ui: false
   });
 

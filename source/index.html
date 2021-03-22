@@ -5,15 +5,21 @@
   <meta name="viewport" content="width=device-width,inital-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Jewellery - магазин ювелирных украшений</title>
-  <link rel="preload" href="fonts/Poppinsregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Poppins/Poppinsregular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+<div style="display: none;">
+  <include src="build/img/sprite_auto.svg"></include>
+</div>
 <div class="site-wrapper">
-  <header class="page-header">
-    <div class="page-header__burger">
-      <img class="burger" src="img/burger-icon.svg" alt="Открыть меню">
-    </div>
+  <!-- .page-header--menu-open перестраивает хедер для показа меню -->
+  <!-- .page-header--absolute добавляется js-ом, вырывает хедер из потока в мобильной версии-->
+  <header class="page-header page-header--menu-open">
+    <!-- .burger--white меняет бургер на крестик при открытии меню-->
+    <button class="page-header__burger burger burger--white" type="button" aria-label="Открыть / закрыть меню">
+      <span class="visually-hidden">Открыть / закрыть меню</span>
+    </button>
     <div class="page-header__search search">
       <form class="search__form" action="/" method="POST" enctype="text/plain">
         <input name="search" type="text" placeholder="Type here to search">
@@ -21,17 +27,24 @@
     </div>
     <div class="page-header__logo logo">
       <a class="logo__link" href="/" aria-label="Ссылка на главную страницу">
-        <img class="logo__img" src="img/logo-header.svg" alt="Логотип Jewellery">
+        <svg class="logo__img" width="66" height="66" aria-labelledby="svg-heading-logo" xmlns="http://www.w3.org/2000/svg">
+          <title id="svg-heading-logo">Логотип Jewellery</title>
+          <use xlink:href="#sprite-logo-header"></use>
+        </svg>
       </a>
     </div>
     <div class="page-header__login login-header">
-      <a class="login-header__link">Login</a>
+      <a class="login-header__link" href="/login.html">Login</a>
     </div>
-    <div class="page-header__cart cart-header">
-      <a class="cart-header__link">Cart <span class="cart-header__counter">0</span></a>
+    <div class="page-header__cart cart-header cart-header--img">
+      <a class="cart-header__link" href="/cart.html">
+        <span class="cart-header__text">Cart</span>
+        <span class="cart-header__counter">0</span>
+      </a>
     </div>
-    <div class="page-header__menu">
-      <ul class="main-menu">
+    <nav class="page-header__menu main-menu main-menu--show">
+      <!-- .main-menu--show показывает меню, переключается с помощью js-->
+      <ul class="main-menu__list">
         <li class="main-menu__item">
           <a class="main-menu__link" href="/">What’s new</a>
         </li>
@@ -46,6 +59,19 @@
         </li>
         <li class="main-menu__item">
           <a class="main-menu__link" href="/catalog.html">Earrings</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="page-header__small-menu small-menu">
+      <ul class="small-menu__list">
+        <li class="small-menu__item">
+          <a href="/about.html" class="small-menu__link">About CH</a>
+        </li>
+        <li class="small-menu__item">
+          <a href="/stores.html" class="small-menu__link">Stores & Hours</a>
+        </li>
+        <li class="small-menu__item">
+          <a href="/contacts.html" class="small-menu__link">Contact Us</a>
         </li>
       </ul>
     </div>

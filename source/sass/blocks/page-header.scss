@@ -1,0 +1,147 @@
+.page-header {
+  @include container();
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @media (max-width: $mobile-width-max) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.page-header--menu-open {
+  background-color: $brand-color;
+}
+
+.page-header__burger {
+  margin-top: 24px;
+
+  @media (max-width: $mobile-width-max) {
+    margin-top: 17px;
+  }
+
+  .page-header--menu-open & {
+    @media (max-width: $tablet-width-max) {
+      order: 1;
+    }
+  }
+}
+
+.page-header__search {
+  width: 200px;
+  // width: calc-percent-width($width, "desktop"); //24.15%
+  // margin-right: calc-percent-width(352px, "desktop");
+  // margin-right: 28.09%;
+
+  @media (max-width: $tablet-width-max) {
+    display: none;
+  }
+
+  .page-header--menu-open & {
+    @media (max-width: $tablet-width-max) {
+      order: 4;
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.page-header__logo {
+  margin-left: calc(50% - 233px);
+  margin-right: auto;
+  min-width: 66px;
+  // width: calc-percent-width(66px, "desktop");
+  width: 66px;
+  height: 66px;
+
+  @media (max-width: $tablet-width-max) {
+    margin-left: calc(50% - 58px);
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-left: calc(50% - 51px);
+  }
+
+  .page-header--menu-open & {
+    @media (max-width: $tablet-width-max) {
+      order: 2;
+    }
+  }
+}
+
+.page-header__login {
+  margin-top: 12px;
+  margin-left: auto;
+  margin-right: 38px;
+
+  @media (max-width: $tablet-width-max) {
+    display: none;
+  }
+
+  .page-header--menu-open & {
+    @media (max-width: $tablet-width-max) {
+      order: 7;
+      display: block;
+      margin-top: 0;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+.page-header__cart {
+  margin-top: 12px;
+
+  @media (max-width: $tablet-width-max) {
+    margin-top: 24px;
+    margin-right: -1px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-top: 17px;
+  }
+
+  .page-header--menu-open & {
+    @media (max-width: $tablet-width-max) {
+      order: 3;
+    }
+  }
+}
+
+.page-header__menu {
+  width: 100%;
+  margin-top: 39px;
+
+  .page-header--menu-open & {
+    @media (max-width: $tablet-width-max) {
+      order: 5;
+      margin-top: 55px;
+      margin-bottom: 55px;
+    }
+
+    @media (max-width: $mobile-width-max) {
+      margin-top: 45px;
+      margin-bottom: 45px;
+    }
+  }
+}
+
+.page-header__small-menu {
+  display: none;
+
+  .page-header--menu-open & {
+    @media (max-width: $tablet-width-max) {
+      order: 6;
+      display: block;
+      width: 100%;
+      margin-bottom: 45px;
+    }
+  }
+}
+
+.page-header--absolute {
+  position: absolute;
+}

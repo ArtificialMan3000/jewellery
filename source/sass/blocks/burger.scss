@@ -1,0 +1,19 @@
+.burger {
+  display: none;
+
+  @media (max-width: $tablet-width-max) {
+    display: block;
+    width: 25px;
+    height: 18px;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    background-image: url("../img/burger-icon.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+}
+
+.burger--white {
+  background-image: url("../img/burger-white-icon.svg");
+}

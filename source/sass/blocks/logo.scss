@@ -1,0 +1,25 @@
+.logo {
+  display: flex;
+}
+
+.logo__link {
+  display: block;
+}
+
+.logo__img {
+  display: block;
+  width: 66px;
+  height: 66px;
+  fill: $brand-color;
+
+  @media (max-width: $mobile-width-max) {
+    width: 52px;
+    height: 52px;
+  }
+
+  .page-header--menu-open & {
+    @media (max-width: $tablet-width-max) {
+      fill: $white;
+    }
+  }
+}

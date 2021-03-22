@@ -1,10 +1,11 @@
 //Breakpoints
-$desktop-width-max: 1366px;
-$desktop-width-min: 1024px;
-$tablet-width-max: 1023px;
-$tablet-width-min: 768px;
-$mobile-width-max: 767px;
-$mobile-width-min: 320px;
+$desktop-width-max: 1366px; // content = 1170px
+$desktop-width-min: 1024px; // content = 828px
+$tablet-width-max: 1023px; // content = 933px
+$tablet-width-min: 768px; // content = 678px
+$mobile-width-max: 767px; // content = 737px
+$mobile-width-min: 320px; // content = 290px
+
 
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
@@ -25,8 +26,11 @@ $brand-color: #a87b62;
 $brand-color-dark: #64a83b;
 
 $white: #ffffff;
+$gray-light: #9b9997;
+$gray-dark: #1d1613;
 $black: #000000;
-$text-black: #1d1613;
+
+$text-color: $gray-dark;
 
 //Sizes
 $mobile-external-paddings: 15px;

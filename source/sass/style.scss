@@ -1,5 +1,28 @@
-@import "vendor/normalize.scss";
 @import "fonts.scss";
 @import "variables.scss";
+@import "functions.scss";
 @import "mixins.scss";
+
+// Общие стили
+@import "vendor/normalize.scss";
 @import "scaffolding.scss";
+
+// Контейнер
+@import "blocks/container.scss";
+
+// Мелкие блоки
+@import "blocks/visually-hidden.scss";
+@import "blocks/burger.scss";
+@import "blocks/search.scss";
+@import "blocks/logo.scss";
+@import "blocks/login-header.scss";
+@import "blocks/cart-header.scss";
+@import "blocks/main-menu.scss";
+@import "blocks/small-menu.scss";
+@import "blocks/button.scss";
+
+
+// Крупные блоки
+@import "blocks/site-wrapper.scss";
+@import "blocks/page-header.scss";
+

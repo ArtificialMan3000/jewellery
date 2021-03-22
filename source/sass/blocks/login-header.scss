@@ -1,0 +1,13 @@
+.login-header__link {
+  margin-left: -1px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+
+  @media (max-width: $tablet-width-max) {
+    margin-left: 0;
+    font-size: 18px;
+    line-height: 130%;
+    color: $white;
+  }
+}

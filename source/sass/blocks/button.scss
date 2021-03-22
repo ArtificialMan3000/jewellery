@@ -1,0 +1,40 @@
+.button {
+  display: inline-block;
+  min-width: 180px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 14px;
+  padding-bottom: 13px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  font-family: $title-font-family;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+.button--transparent-white {
+  background-color: transparent;
+  color: $white;
+}
+
+.button--transparent-blue {
+  border-color: $brand-color;
+  background-color: transparent;
+  color: $brand-color;
+}
+
+.button--fill-blue {
+  border: none;
+  background-color: $brand-color;
+  color: $white;
+}
