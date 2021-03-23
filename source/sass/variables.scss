@@ -1,5 +1,6 @@
 //Breakpoints
-$desktop-width-max: 1366px; // content = 1170px
+$desktop-width-max: 1266px; // content = 1170px
+$desktop-width-middle: 1150px; // content = 1054px
 $desktop-width-min: 1024px; // content = 828px
 $tablet-width-max: 1023px; // content = 933px
 $tablet-width-min: 768px; // content = 678px
@@ -18,7 +19,7 @@ $text-font-size: 16px;
 $small-font-size: 14px;
 $h2-font-size: 34px;
 
-$text-line-height: 130%;
+$text-line-height: 1.3;
 
 
 //Colors
@@ -35,4 +36,4 @@ $text-color: $gray-dark;
 //Sizes
 $mobile-external-paddings: 15px;
 $tablet-external-paddings: 45px;
-$desktop-external-paddings: 98px;
+$desktop-external-paddings: 48px;
