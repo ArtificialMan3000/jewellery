@@ -1,0 +1,9 @@
+.catalog {
+  @include container();
+  display: flex;
+  padding-top: 80px;
+}
+
+.catalog__title {
+  @include visually-hidden();
+}

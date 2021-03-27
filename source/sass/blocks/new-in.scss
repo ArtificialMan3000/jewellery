@@ -1,0 +1,39 @@
+.new-in {
+  @include container();
+  display: flex;
+  flex-direction: column;
+  padding-top: 130px;
+
+  @media (max-width: $tablet-width-max) {
+    padding-top: 80px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-top: 70px;
+  }
+}
+
+.new-in__title {
+  margin-top: -10px;
+  margin-bottom: 24px;
+  align-self: center;
+  font-family: $title-font-family;
+  font-weight: bold;
+  font-size: 34px;
+
+  @media (max-width: $tablet-width-max) {
+    margin-bottom: 20px;
+  }
+}
+
+.new-in__link {
+  align-self: center;
+  border-bottom: 1px solid $brand-color;
+  text-align: center;
+  font-weight: 500;
+  color: $black;
+
+  @media (max-width: $tablet-width-max) {
+    padding-bottom: 4px;
+  }
+}

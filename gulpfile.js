@@ -39,15 +39,20 @@ gulp.task("images", function () {
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true}),
-      imagemin.svgo()
+      imagemin.svgo({
+        plugins: [
+          {removeViewBox: false},
+          {cleanupIDs: false}
+        ]
+      })
     ]))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{jpg,png}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("sprite", function () {
@@ -76,7 +81,7 @@ gulp.task("html", function () {
 // });
 
 gulp.task('js', function (done) {
-  gulp.src(['source/js/vendor/*.js', 'source/js/menu.js', 'source/js/main.js'])
+  gulp.src(['source/js/vendor/*.js', 'source/js/menu.js', 'source/js/accordion.js', 'source/js/main.js'])
       .pipe(concat('script.js'))
       .pipe(uglify())
       .pipe(rename(function (path) {
@@ -115,7 +120,7 @@ gulp.task("server", function () {
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/img/sprite-*.svg", gulp.series("sprite", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
-  gulp.watch("source/js/script.js", gulp.series("js", "refresh"));
+  gulp.watch("source/js/**/*.js", gulp.series("js", "refresh"));
 });
 
 gulp.task("refresh", function (done) {
@@ -125,6 +130,6 @@ gulp.task("refresh", function (done) {
 
 gulp.task("img-opt", gulp.series("images", "webp"));
 
-gulp.task("build", gulp.series("clean", "copy", "css", "js", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "js", "sprite", "html", "img-opt"));
 
 gulp.task("start", gulp.series("build", "server"));

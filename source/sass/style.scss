@@ -19,6 +19,14 @@
 @import "blocks/cart-header.scss";
 @import "blocks/main-menu.scss";
 @import "blocks/small-menu.scss";
+@import "blocks/products-slider.scss";
+@import "blocks/product-item.scss";
+@import "blocks/previews.scss";
+@import "blocks/preview-single.scss";
+@import "blocks/faq-single.scss";
+@import "blocks/accordion.scss";
+@import "blocks/filter.scss";
+@import "blocks/catalog-grid.scss";
 @import "blocks/button.scss";
 
 @import "blocks/subscription.scss";
@@ -30,5 +38,10 @@
 // Крупные блоки
 @import "blocks/site-wrapper.scss";
 @import "blocks/page-header.scss";
+@import "blocks/envelope.scss";
+@import "blocks/new-in.scss";
+@import "blocks/blog.scss";
+@import "blocks/faq.scss";
+@import "blocks/catalog.scss";
 @import "blocks/page-footer.scss";
 

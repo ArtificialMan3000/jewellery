@@ -6,9 +6,13 @@
   padding-top: 30px;
   padding-bottom: 21px;
 
+  @media (max-width: $tablet-width-max) {
+    padding-bottom: 30px;
+  }
+
   @media (max-width: $mobile-width-max) {
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 6px;
   }
 }
 
@@ -32,6 +36,8 @@
 
 .page-header__search {
   width: 200px;
+  // margin-top: 12px;
+  margin-top: 24px;
   // width: calc-percent-width($width, "desktop"); //24.15%
   // margin-right: calc-percent-width(352px, "desktop");
   // margin-right: 28.09%;
@@ -73,7 +79,8 @@
 }
 
 .page-header__login {
-  margin-top: 12px;
+  // margin-top: 12px;
+  margin-top: 24px;
   margin-left: auto;
   margin-right: 38px;
 
@@ -93,7 +100,8 @@
 }
 
 .page-header__cart {
-  margin-top: 12px;
+  // margin-top: 12px;
+  margin-top: 24px;
 
   @media (max-width: $tablet-width-max) {
     margin-top: 24px;
@@ -113,7 +121,8 @@
 
 .page-header__menu {
   width: 100%;
-  margin-top: 39px;
+  // margin-top: 39px;
+  margin-top: 50px;
 
   .page-header--menu-open & {
     @media (max-width: $tablet-width-max) {

@@ -31,8 +31,8 @@ window.menu = (function () {
     }
     if (pageHeader) {
       pageHeader.classList.remove('page-header--menu-open');
+      pageHeader.classList.remove('page-header--absolute');
     }
-    document.body.classList.remove('body-menu-open');
 
     // Удаляем с пунктов меню обработчик для закрытия меню
     if (menuLinks) {
@@ -52,9 +52,9 @@ window.menu = (function () {
     }
     if (pageHeader) {
       pageHeader.classList.add('page-header--menu-open');
+      pageHeader.classList.add('page-header--absolute');
     }
     window.scroll(0, 0);
-    document.body.classList.add('body-menu-open');
 
     // Вешаем на пункты меню обработчик для закрытия меню
     if (menuLinks) {
@@ -83,10 +83,6 @@ window.menu = (function () {
 
   // Инициализирует модуль
   var initMainMenu = function () {
-    // Убираем хедер из потока
-    if (pageHeader) {
-      pageHeader.classList.add('page-header--absolute');
-    }
     // Прячем меню
     closeMainMenu();
     // Вешаем на бургер обработчик для открытия и закрытия меню

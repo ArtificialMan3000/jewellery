@@ -1,0 +1,150 @@
+.preview-single {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin-bottom: 30px;
+
+  @media (max-width: $tablet-width-max) {
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 40px;
+  }
+
+  &--small {
+    height: 300px;
+
+    @media (max-width: $mobile-width-max) {
+      align-items: flex-end;
+      height: auto;
+    }
+  }
+
+  &--big {
+    height: 630px;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    @media (max-width: $tablet-width-max) {
+      height: 300px;
+      align-items: stretch;
+    }
+
+    @media (max-width: $mobile-width-max) {
+      align-items: flex-end;
+      height: auto;
+    }
+  }
+
+  &--small--right {
+    justify-content: flex-end;
+  }
+
+  &--small--left {
+    justify-content: flex-start;
+  }
+}
+
+.preview-single__img {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 285px;
+  height: 100%;
+  object-fit: cover;
+
+  @media (max-width: $tablet-width-max) {
+    width: 339px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 100%;
+    height: auto;
+  }
+
+  &--left {
+    left: 0;
+  }
+
+  &--right {
+    right: 0;
+  }
+
+  &--full {
+    left: 0;
+    width: 100%;
+
+    @media (max-width: $tablet-width-max) {
+      width: 339px;
+    }
+
+    @media (max-width: $mobile-width-max) {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.preview-single__info {
+  width: 285px;
+  min-height: 300px;
+  padding-top: 71px;
+  padding-bottom: 71px;
+  padding-left: 60px;
+  padding-right: 60px;
+  text-align: center;
+  background-color: #f0eae4;
+  z-index: 1;
+
+  @media (max-width: $tablet-width-max) {
+    width: 339px;
+    padding-left: 88px;
+    padding-right: 88px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    min-height: 256px;
+    margin-top: 256px;
+    padding-top: 49px;
+    padding-bottom: 49px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  &--big {
+    @media (max-width: $tablet-width-max) {
+      padding-top: 88px;
+      padding-bottom: 88px;
+    }
+
+    @media (max-width: $mobile-width-max) {
+      padding-top: 66px;
+      padding-bottom: 66px;
+    }
+  }
+}
+
+.preview-single__date {
+  margin: 0;
+  margin-top: -3px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #9b9997;
+}
+
+.preview-single__title {
+  margin: 0;
+  margin-top: 13px;
+  margin-bottom: 39px;
+  font-family: $title-font-family;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.preview-single__read-more {
+  padding-bottom: 4px;
+  border-bottom: 1px solid $brand-color;
+  font-weight: 500;
+  color: #1d1613;
+}
