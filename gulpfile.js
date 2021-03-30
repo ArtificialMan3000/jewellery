@@ -81,9 +81,16 @@ gulp.task("html", function () {
 // });
 
 gulp.task('js', function (done) {
-  gulp.src(['source/js/vendor/*.js', 'source/js/menu.js', 'source/js/accordion.js', 'source/js/main.js'])
+  gulp.src([
+    'source/js/vendor/*.js',
+    'source/js/menu.js',
+    'source/js/accordion.js',
+    'source/js/modal.js',
+    'source/js/form-storage.js',
+    'source/js/main.js'
+  ])
       .pipe(concat('script.js'))
-      .pipe(uglify())
+      // .pipe(uglify())
       .pipe(rename(function (path) {
         path.extname = ".min.js";
       }))

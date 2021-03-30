@@ -5,5 +5,5 @@
 }
 
 .filter__title {
-
+  @include visually-hidden();
 }

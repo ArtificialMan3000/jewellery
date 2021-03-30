@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,inital-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jewellery - магазин ювелирных украшений</title>
+  <link rel="preload" href="fonts/Poppins/Poppinsregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<div style="display: none;">
+  <include src="build/img/sprite_auto.svg"></include>
+</div>
+<div class="site-wrapper">
+  <!-- .page-header--menu-open перестраивает хедер для показа меню -->
+  <!-- .page-header--absolute добавляется js-ом, вырывает хедер из потока в мобильной версии-->
+  <header class="page-header page-header--menu-open">
+    <!-- .burger--white меняет бургер на крестик при открытии меню-->
+    <button class="page-header__burger burger burger--white" type="button" aria-label="Открыть / закрыть меню">
+      <span class="visually-hidden">Открыть / закрыть меню</span>
+    </button>
+    <div class="page-header__search search">
+      <form class="search__form" action="/" method="POST" enctype="text/plain">
+        <input name="search" type="text" placeholder="Type here to search">
+      </form>
+    </div>
+    <div class="page-header__logo logo">
+      <a class="logo__link" href="/" aria-label="Ссылка на главную страницу">
+        <svg class="logo__img" width="66" height="66" aria-labelledby="svg-heading-logo" xmlns="http://www.w3.org/2000/svg">
+          <title id="svg-heading-logo">Логотип Jewellery</title>
+          <use xlink:href="#sprite-logo-header"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="page-header__login login-header">
+      <a class="login-header__link" href="/login-modal.html" data-modal="login_modal">Login</a>
+    </div>
+    <div class="page-header__cart cart-header cart-header--img">
+      <a class="cart-header__link" href="/cart-modal.html" data-modal="cart_modal">
+        <span class="cart-header__text">Cart</span>
+        <span class="cart-header__counter">0</span>
+      </a>
+    </div>
+    <nav class="page-header__menu main-menu main-menu--show">
+      <!-- .main-menu--show показывает меню, переключается с помощью js-->
+      <ul class="main-menu__list">
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="/">What’s new</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="/catalog.html">Chokers</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="/catalog.html">Necklaces</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="/catalog.html">Rings</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="/catalog.html">Earrings</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="page-header__small-menu small-menu">
+      <ul class="small-menu__list">
+        <li class="small-menu__item">
+          <a href="/about.html" class="small-menu__link">About CH</a>
+        </li>
+        <li class="small-menu__item">
+          <a href="/stores.html" class="small-menu__link">Stores & Hours</a>
+        </li>
+        <li class="small-menu__item">
+          <a href="/contacts.html" class="small-menu__link">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <h1 class="visually-hidden">Jewellery - магазин ювелирных украшений</h1>
+    <section class="envelope envelope--chest">
+      <h2 class="envelope__title">Perfection</h2>
+      <p class="envelope__text">
+        made to be yours
+      </p>
+    </section>
+    <section class="new-in">
+      <h2 class="new-in__title">New In</h2>
+      <a class="new-in__link" href="/catalog.html">Shop Now</a>
+      <div class="new-in__slider products-slider">
+        <button class="products-slider__arrow-left">
+          <span class="visually-hidden">Листать влево</span>
+        </button>
+        <button class="products-slider__arrow-right">
+          <span class="visually-hidden">Листать вправо</span>
+        </button>
+        <div class="products-slider__list-wrapper">
+          <ul class="products-slider__list">
+            <li class="products-slider__item product-item">
+              <a href="/product.html" class="product-item__link-img">
+                <picture>
+                  <!-- 1х: 130px; 2x: 260px -->
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/necklace-with-amethyst-mobile-img@1x.webp 1x, img/necklace-with-amethyst-mobile-img@2x.webp 2x">
+                  <!-- 1х: 324px; 2x: 648px -->
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-with-amethyst-tablet-img@1x.webp 1x, img/necklace-with-amethyst-tablet-img@2x.webp 2x">
+                  <!-- 1х: 270px; 2x: 540px -->
+                  <source type="image/webp" srcset="img/necklace-with-amethyst-desktop-img@1x.webp 1x, img/necklace-with-amethyst-desktop-img@2x.webp 2x">
+                  <!-- 1х: 270px; 2x: 540px -->
+                  <img class="product-item__img"
+                      srcset="
+                        img/necklace-with-amethyst-desktop-img@2x.jpg 2x,
+                        img/necklace-with-amethyst-desktop-img@1x.jpg 1x"
+                      src="img/necklace-with-amethyst-desktop-img@1x.jpg" width="270" height="284" alt="Necklace with amethyst">
+                </picture>
+              </a>
+              <a href="/product.html" class="product-item__link-name">
+                <h3 class="product-item__name">Necklace with amethyst</h3>
+              </a>
+              <p class="product-item__price">$ 145</p>
+            </li>
+            <li class="products-slider__item product-item">
+              <a href="/product.html" class="product-item__link-img">
+                <picture>
+                  <!-- 1х: 130px; 2x: 260px -->
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/necklace-with-amethyst-mobile-img@1x.webp 1x, img/necklace-with-amethyst-mobile-img@2x.webp 2x">
+                  <!-- 1х: 324px; 2x: 648px -->
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-with-amethyst-tablet-img@1x.webp 1x, img/necklace-with-amethyst-tablet-img@2x.webp 2x">
+                  <!-- 1х: 270px; 2x: 540px -->
+                  <source type="image/webp" srcset="img/necklace-with-amethyst-desktop-img@1x.webp 1x, img/necklace-with-amethyst-desktop-img@2x.webp 2x">
+                  <!-- 1х: 270px; 2x: 540px -->
+                  <img class="product-item__img"
+                      srcset="
+                        img/necklace-with-amethyst-desktop-img@2x.jpg 2x,
+                        img/necklace-with-amethyst-desktop-img@1x.jpg 1x"
+                      src="img/necklace-with-amethyst-desktop-img@1x.jpg" width="270" height="284" alt="Necklace with amethyst">
+                </picture>
+              </a>
+              <a href="/product.html" class="product-item__link-name">
+                <h3 class="product-item__name">Necklace with amethyst</h3>
+              </a>
+              <p class="product-item__price">$ 145</p>
+            </li>
+            <li class="products-slider__item product-item">
+              <a href="/product.html" class="product-item__link-img">
+                <picture>
+                  <!-- 1х: 130px; 2x: 260px -->
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/necklace-with-amethyst-mobile-img@1x.webp 1x, img/necklace-with-amethyst-mobile-img@2x.webp 2x">
+                  <!-- 1х: 324px; 2x: 648px -->
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-with-amethyst-tablet-img@1x.webp 1x, img/necklace-with-amethyst-tablet-img@2x.webp 2x">
+                  <!-- 1х: 270px; 2x: 540px -->
+                  <source type="image/webp" srcset="img/necklace-with-amethyst-desktop-img@1x.webp 1x, img/necklace-with-amethyst-desktop-img@2x.webp 2x">
+                  <!-- 1х: 270px; 2x: 540px -->
+                  <img class="product-item__img"
+                      srcset="
+                        img/necklace-with-amethyst-desktop-img@2x.jpg 2x,
+                        img/necklace-with-amethyst-desktop-img@1x.jpg 1x"
+                      src="img/necklace-with-amethyst-desktop-img@1x.jpg" width="270" height="284" alt="Necklace with amethyst">
+                </picture>
+              </a>
+              <a href="/product.html" class="product-item__link-name">
+                <h3 class="product-item__name">Necklace with amethyst</h3>
+              </a>
+              <p class="product-item__price">$ 145</p>
+            </li>
+            <li class="products-slider__item product-item">
+              <a href="/product.html" class="product-item__link-img">
+                <picture>
+                  <!-- 1х: 130px; 2x: 260px -->
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/necklace-with-amethyst-mobile-img@1x.webp 1x, img/necklace-with-amethyst-mobile-img@2x.webp 2x">
+                  <!-- 1х: 324px; 2x: 648px -->
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-with-amethyst-tablet-img@1x.webp 1x, img/necklace-with-amethyst-tablet-img@2x.webp 2x">
+                  <!-- 1х: 270px; 2x: 540px -->
+                  <source type="image/webp" srcset="img/necklace-with-amethyst-desktop-img@1x.webp 1x, img/necklace-with-amethyst-desktop-img@2x.webp 2x">
+                  <!-- 1х: 270px; 2x: 540px -->
+                  <img class="product-item__img"
+                      srcset="
+                        img/necklace-with-amethyst-desktop-img@2x.jpg 2x,
+                        img/necklace-with-amethyst-desktop-img@1x.jpg 1x"
+                      src="img/necklace-with-amethyst-desktop-img@1x.jpg" width="270" height="284" alt="Necklace with amethyst">
+                </picture>
+              </a>
+              <a href="/product.html" class="product-item__link-name">
+                <h3 class="product-item__name">Necklace with amethyst</h3>
+              </a>
+              <p class="product-item__price">$ 145</p>
+            </li>
+            <li class="products-slider__item product-item">
+              <a href="/product.html" class="product-item__link-img">
+                <picture>
+                  <!-- 1х: 130px; 2x: 260px -->
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/necklace-with-amethyst-mobile-img@1x.webp 1x, img/necklace-with-amethyst-mobile-img@2x.webp 2x">
+                  <!-- 1х: 324px; 2x: 648px -->
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-with-amethyst-tablet-img@1x.webp 1x, img/necklace-with-amethyst-tablet-img@2x.webp 2x">
+                  <!-- 1х: 270px; 2x: 540px -->
+                  <source type="image/webp" srcset="img/necklace-with-amethyst-desktop-img@1x.webp 1x, img/necklace-with-amethyst-desktop-img@2x.webp 2x">
+                  <!-- 1х: 270px; 2x: 540px -->
+                  <img class="product-item__img"
+                      srcset="
+                        img/necklace-with-amethyst-desktop-img@2x.jpg 2x,
+                        img/necklace-with-amethyst-desktop-img@1x.jpg 1x"
+                      src="img/necklace-with-amethyst-desktop-img@1x.jpg" width="270" height="284" alt="Necklace with amethyst">
+                </picture>
+              </a>
+              <a href="/product.html" class="product-item__link-name">
+                <h3 class="product-item__name">Necklace with amethyst</h3>
+              </a>
+              <p class="product-item__price">$ 145</p>
+            </li>
+            <li class="products-slider__item product-item">
+              <a href="/product.html" class="product-item__link-img">
+                <picture>
+                  <!-- 1х: 130px; 2x: 260px -->
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/necklace-with-amethyst-mobile-img@1x.webp 1x, img/necklace-with-amethyst-mobile-img@2x.webp 2x">
+                  <!-- 1х: 324px; 2x: 648px -->
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-with-amethyst-tablet-img@1x.webp 1x, img/necklace-with-amethyst-tablet-img@2x.webp 2x">
+                  <!-- 1х: 270px; 2x: 540px -->
+                  <source type="image/webp" srcset="img/necklace-with-amethyst-desktop-img@1x.webp 1x, img/necklace-with-amethyst-desktop-img@2x.webp 2x">
+                  <!-- 1х: 270px; 2x: 540px -->
+                  <img class="product-item__img"
+                      srcset="
+                        img/necklace-with-amethyst-desktop-img@2x.jpg 2x,
+                        img/necklace-with-amethyst-desktop-img@1x.jpg 1x"
+                      src="img/necklace-with-amethyst-desktop-img@1x.jpg" width="270" height="284" alt="Necklace with amethyst">
+                </picture>
+              </a>
+              <a href="/product.html" class="product-item__link-name">
+                <h3 class="product-item__name">Necklace with amethyst</h3>
+              </a>
+              <p class="product-item__price">$ 145</p>
+            </li>
+            <li class="products-slider__item product-item">
+              <a href="/product.html" class="product-item__link-img">
+                <picture>
+                  <!-- 1х: 130px; 2x: 260px -->
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/necklace-with-amethyst-mobile-img@1x.webp 1x, img/necklace-with-amethyst-mobile-img@2x.webp 2x">
+                  <!-- 1х: 324px; 2x: 648px -->
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-with-amethyst-tablet-img@1x.webp 1x, img/necklace-with-amethyst-tablet-img@2x.webp 2x">
+                  <!-- 1х: 270px; 2x: 540px -->
+                  <source type="image/webp" srcset="img/necklace-with-amethyst-desktop-img@1x.webp 1x, img/necklace-with-amethyst-desktop-img@2x.webp 2x">
+                  <!-- 1х: 270px; 2x: 540px -->
+                  <img class="product-item__img"
+                      srcset="
+                        img/necklace-with-amethyst-desktop-img@2x.jpg 2x,
+                        img/necklace-with-amethyst-desktop-img@1x.jpg 1x"
+                      src="img/necklace-with-amethyst-desktop-img@1x.jpg" width="270" height="284" alt="Necklace with amethyst">
+                </picture>
+              </a>
+              <a href="/product.html" class="product-item__link-name">
+                <h3 class="product-item__name">Necklace with amethyst</h3>
+              </a>
+              <p class="product-item__price">$ 145</p>
+            </li>
+            <li class="products-slider__item product-item">
+              <a href="/product.html" class="product-item__link-img">
+                <picture>
+                  <!-- 1х: 130px; 2x: 260px -->
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/necklace-with-amethyst-mobile-img@1x.webp 1x, img/necklace-with-amethyst-mobile-img@2x.webp 2x">
+                  <!-- 1х: 324px; 2x: 648px -->
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-with-amethyst-tablet-img@1x.webp 1x, img/necklace-with-amethyst-tablet-img@2x.webp 2x">
+                  <!-- 1х: 270px; 2x: 540px -->
+                  <source type="image/webp" srcset="img/necklace-with-amethyst-desktop-img@1x.webp 1x, img/necklace-with-amethyst-desktop-img@2x.webp 2x">
+                  <!-- 1х: 270px; 2x: 540px -->
+                  <img class="product-item__img"
+                      srcset="
+                        img/necklace-with-amethyst-desktop-img@2x.jpg 2x,
+                        img/necklace-with-amethyst-desktop-img@1x.jpg 1x"
+                      src="img/necklace-with-amethyst-desktop-img@1x.jpg" width="270" height="284" alt="Necklace with amethyst">
+                </picture>
+              </a>
+              <a href="/product.html" class="product-item__link-name">
+                <h3 class="product-item__name">Necklace with amethyst</h3>
+              </a>
+              <p class="product-item__price">$ 145</p>
+            </li>
+            <li class="products-slider__item product-item">
+              <a href="/product.html" class="product-item__link-img">
+                <picture>
+                  <!-- 1х: 130px; 2x: 260px -->
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/necklace-with-amethyst-mobile-img@1x.webp 1x, img/necklace-with-amethyst-mobile-img@2x.webp 2x">
+                  <!-- 1х: 324px; 2x: 648px -->
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-with-amethyst-tablet-img@1x.webp 1x, img/necklace-with-amethyst-tablet-img@2x.webp 2x">
+                  <!-- 1х: 270px; 2x: 540px -->
+                  <source type="image/webp" srcset="img/necklace-with-amethyst-desktop-img@1x.webp 1x, img/necklace-with-amethyst-desktop-img@2x.webp 2x">
+                  <!-- 1х: 270px; 2x: 540px -->
+                  <img class="product-item__img"
+                      srcset="
+                        img/necklace-with-amethyst-desktop-img@2x.jpg 2x,
+                        img/necklace-with-amethyst-desktop-img@1x.jpg 1x"
+                      src="img/necklace-with-amethyst-desktop-img@1x.jpg" width="270" height="284" alt="Necklace with amethyst">
+                </picture>
+              </a>
+              <a href="/product.html" class="product-item__link-name">
+                <h3 class="product-item__name">Necklace with amethyst</h3>
+              </a>
+              <p class="product-item__price">$ 145</p>
+            </li>
+            <li class="products-slider__item product-item">
+              <a href="/product.html" class="product-item__link-img">
+                <picture>
+                  <!-- 1х: 130px; 2x: 260px -->
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/necklace-with-amethyst-mobile-img@1x.webp 1x, img/necklace-with-amethyst-mobile-img@2x.webp 2x">
+                  <!-- 1х: 324px; 2x: 648px -->
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-with-amethyst-tablet-img@1x.webp 1x, img/necklace-with-amethyst-tablet-img@2x.webp 2x">
+                  <!-- 1х: 270px; 2x: 540px -->
+                  <source type="image/webp" srcset="img/necklace-with-amethyst-desktop-img@1x.webp 1x, img/necklace-with-amethyst-desktop-img@2x.webp 2x">
+                  <!-- 1х: 270px; 2x: 540px -->
+                  <img class="product-item__img"
+                      srcset="
+                        img/necklace-with-amethyst-desktop-img@2x.jpg 2x,
+                        img/necklace-with-amethyst-desktop-img@1x.jpg 1x"
+                      src="img/necklace-with-amethyst-desktop-img@1x.jpg" width="270" height="284" alt="Necklace with amethyst">
+                </picture>
+              </a>
+              <a href="/product.html" class="product-item__link-name">
+                <h3 class="product-item__name">Necklace with amethyst</h3>
+              </a>
+              <p class="product-item__price">$ 145</p>
+            </li>
+            <li class="products-slider__item product-item">
+              <a href="/product.html" class="product-item__link-img">
+                <picture>
+                  <!-- 1х: 130px; 2x: 260px -->
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/necklace-with-amethyst-mobile-img@1x.webp 1x, img/necklace-with-amethyst-mobile-img@2x.webp 2x">
+                  <!-- 1х: 324px; 2x: 648px -->
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-with-amethyst-tablet-img@1x.webp 1x, img/necklace-with-amethyst-tablet-img@2x.webp 2x">
+                  <!-- 1х: 270px; 2x: 540px -->
+                  <source type="image/webp" srcset="img/necklace-with-amethyst-desktop-img@1x.webp 1x, img/necklace-with-amethyst-desktop-img@2x.webp 2x">
+                  <!-- 1х: 270px; 2x: 540px -->
+                  <img class="product-item__img"
+                      srcset="
+                        img/necklace-with-amethyst-desktop-img@2x.jpg 2x,
+                        img/necklace-with-amethyst-desktop-img@1x.jpg 1x"
+                      src="img/necklace-with-amethyst-desktop-img@1x.jpg" width="270" height="284" alt="Necklace with amethyst">
+                </picture>
+              </a>
+              <a href="/product.html" class="product-item__link-name">
+                <h3 class="product-item__name">Necklace with amethyst</h3>
+              </a>
+              <p class="product-item__price">$ 145</p>
+            </li>
+            <li class="products-slider__item product-item">
+              <a href="/product.html" class="product-item__link-img">
+                <picture>
+                  <!-- 1х: 130px; 2x: 260px -->
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/necklace-with-amethyst-mobile-img@1x.webp 1x, img/necklace-with-amethyst-mobile-img@2x.webp 2x">
+                  <!-- 1х: 324px; 2x: 648px -->
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-with-amethyst-tablet-img@1x.webp 1x, img/necklace-with-amethyst-tablet-img@2x.webp 2x">
+                  <!-- 1х: 270px; 2x: 540px -->
+                  <source type="image/webp" srcset="img/necklace-with-amethyst-desktop-img@1x.webp 1x, img/necklace-with-amethyst-desktop-img@2x.webp 2x">
+                  <!-- 1х: 270px; 2x: 540px -->
+                  <img class="product-item__img"
+                      srcset="
+                        img/necklace-with-amethyst-desktop-img@2x.jpg 2x,
+                        img/necklace-with-amethyst-desktop-img@1x.jpg 1x"
+                      src="img/necklace-with-amethyst-desktop-img@1x.jpg" width="270" height="284" alt="Necklace with amethyst">
+                </picture>
+              </a>
+              <a href="/product.html" class="product-item__link-name">
+                <h3 class="product-item__name">Necklace with amethyst</h3>
+              </a>
+              <p class="product-item__price">$ 145</p>
+            </li>
+          </ul>
+        </div>
+        <ul class="products-slider__pages-list">
+          <li class="products-slider__pages-item">
+            <button class="products-slider__pages-button products-slider__pages-button--current">1</button>
+          </li>
+          <li class="products-slider__pages-item">
+            <button class="products-slider__pages-button">2</button>
+          </li>
+          <li class="products-slider__pages-item">
+            <button class="products-slider__pages-button">3</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="blog">
+      <h2 class="blog__title">Blog</h2>
+      <a class="blog__read-all" href="/catalog.html">Read All</a>
+      <div class="blog__previews previews">
+        <div class="previews__col previews__col--left">
+          <div class="previews__item preview-single preview-single--small preview-single--small--right">
+            <picture>
+              <!-- 1х: 290px; 2x: 256px -->
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/jess-harper-sunday-img-mobile@1x.webp 1x, img/jess-harper-sunday-img-mobile@2x.webp 2x">
+              <!-- 1х: 339px; 2x: 300px -->
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/jess-harper-sunday-img-tablet@1x.webp 1x, img/jess-harper-sunday-img-tablet@2x.webp 2x">
+              <!-- 1х: 285px; 2x: 300px -->
+              <source type="image/webp" srcset="img/jess-harper-sunday-img-desktop@1x.webp 1x, img/jess-harper-sunday-img-desktop@2x.webp 2x">
+              <!-- 1х: 339px; 2x: 300px -->
+              <img class="preview-single__img preview-single__img--left"
+                  srcset="
+                    img/jess-harper-sunday-img-desktop@2x.jpg 2x,
+                    img/jess-harper-sunday-img-desktop@1x.jpg 1x"
+                  src="img/jess-harper-sunday-img-desktop@1x.jpg" width="339" height="300" alt="jess harper sunday">
+            </picture>
+            <div class="preview-single__info">
+              <p class="preview-single__date">September 30, 2019</p>
+              <h3 class="preview-single__title">How to care for your jewellery</h3>
+              <a class="preview-single__read-more" href="/blog.html">Read Article</a>
+            </div>
+          </div>
+          <div class="previews__item preview-single preview-single--small preview-single--small--left">
+            <picture>
+              <!-- 1х: 290px; 2x: 256px -->
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/alex-holyoake-img-mobile@1x.webp 1x, img/alex-holyoake-img-mobile@2x.webp 2x">
+              <!-- 1х: 339px; 2x: 300px -->
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/alex-holyoake-img-tablet@1x.webp 1x, img/alex-holyoake-img-tablet@2x.webp 2x">
+              <!-- 1х: 285px; 2x: 300px -->
+              <source type="image/webp" srcset="img/alex-holyoake-img-desktop@1x.webp 1x, img/alex-holyoake-img-desktop@2x.webp 2x">
+              <!-- 1х: 339px; 2x: 300px -->
+              <img class="preview-single__img preview-single__img--right"
+                  srcset="
+                    img/alex-holyoake-img-desktop@2x.jpg 2x,
+                    img/alex-holyoake-img-desktop@1x.jpg 1x"
+                  src="img/alex-holyoake-img-desktop@1x.jpg" width="339" height="300" alt="alex-holyoake">
+            </picture>
+            <div class="preview-single__info">
+              <p class="preview-single__date">September 23, 2019</p>
+              <h3 class="preview-single__title">Power of crystals</h3>
+              <a class="preview-single__read-more" href="/blog.html">Read Article</a>
+            </div>
+          </div>
+        </div>
+        <div class="previews__col previews__col--right">
+          <div class="previews__item preview-single preview-single--big">
+            <picture>
+              <!-- 1х: 290px; 2x: 256px -->
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/alve-odonnell-img-mobile@1x.webp 1x, img/alve-odonnell-img-mobile@2x.webp 2x">
+              <!-- 1х: 339px; 2x: 300px -->
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/alve-odonnell-img-tablet@1x.webp 1x, img/alve-odonnell-img-tablet@2x.webp 2x">
+              <!-- 1х: 570px; 2x: 630px -->
+              <source type="image/webp" srcset="img/alve-odonnell-img-desktop@1x.webp 1x, img/alve-odonnell-img-desktop@2x.webp 2x">
+              <!-- 1х: 570px; 2x: 630px -->
+              <img class="preview-single__img preview-single__img--full"
+                  srcset="
+                    img/alve-odonnell-img-desktop@2x.jpg 2x,
+                    img/alve-odonnell-img-desktop@1x.jpg 1x"
+                  src="img/alve-odonnell-img-desktop@1x.jpg" width="339" height="300" alt="alve-odonnell">
+            </picture>
+            <div class="preview-single__info preview-single__info--big">
+              <p class="preview-single__date">September 16, 2019</p>
+              <h3 class="preview-single__title">AW 19 trends</h3>
+              <a class="preview-single__read-more" href="/blog.html">Read Article</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="faq">
+      <h2 class="faq__title">Frequently asked questions</h2>
+      <ul class="faq__list">
+        <li class="faq__item faq-single accordion accordion--opened">
+          <h3 class="faq-single__title accordion__title">What materials are the&nbsp;jewellery made&nbsp;of?</h3>
+          <p class="faq-single__text accordion__content">Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+        </li>
+        <li class="faq__item faq-single accordion">
+          <h3 class="faq-single__title accordion__title">Which countries do&nbsp;you&nbsp;deliver to?</h3>
+          <p class="faq-single__text accordion__content">Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+        </li>
+        <li class="faq__item faq-single accordion">
+          <h3 class="faq-single__title accordion__title">What are the payment&nbsp;methods?</h3>
+          <p class="faq-single__text accordion__content">Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+        </li>
+        <li class="faq__item faq-single accordion">
+          <h3 class="faq-single__title accordion__title">Can I return the jewellery&nbsp;if it didn’t fit me?</h3>
+          <p class="faq-single__text accordion__content">Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+        </li>
+      </ul>
+    </section>
+    <section class="gallery">
+      <div class="gallery__title">@ Chjewellery</div>
+      <div class="gallery__link">Follow Us</div>
+      <ul class="gallery__list">
+
+      </ul>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__subscription subscription">
+      <h2 class="subscription__title">The good stuff in your inbox </h2>
+      <p class="subscription__descr">News and updates from CH. No spam, we promise.</p>
+      <form class="subscription__form" action="/" method="POST" enctype="text/plain">
+        <input class="subscription__input" name="subscr-email" type="email" placeholder="Your E-mail">
+        <button class="subscription__button" type="submit">Sign Up</button>
+      </form>
+    </div>
+    <div class="page-footer__footer-menu footer-menu">
+      <ul class="footer-menu__list">
+        <li class="footer-menu__item">
+          <a class="footer-menu__link" href="/">Ordering & Payment</a>
+        </li>
+        <li class="footer-menu__item">
+          <a class="footer-menu__link" href="/">Terms & Conditions</a>
+        </li>
+        <li class="footer-menu__item">
+          <a class="footer-menu__link" href="/">Returns & Exchanges</a>
+        </li>
+        <li class="footer-menu__item">
+          <a class="footer-menu__link" href="/">Delivery</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__about-menu about-menu">
+      <ul class="about-menu__list">
+        <li class="about-menu__item">
+          <a class="about-menu__link" href="/">About CH</a>
+        </li>
+        <li class="about-menu__item">
+          <a class="about-menu__link" href="/">Stores & Hours</a>
+        </li>
+        <li class="about-menu__item">
+          <a class="about-menu__link" href="/">Jobs</a>
+        </li>
+        <li class="about-menu__item">
+          <a class="about-menu__link" href="/">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__socials socials">
+      <ul class="socials__list">
+        <li class="socials__item">
+          <a class="socials__link socials__link--facebook" href="http://facebook.com">
+            <span class="socials__link-text">Facebook</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--instagram" href="http://instagram.com">
+            <span class="socials__link-text">Instagram</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--pinterest" href="http://pinterest.com">
+            <span class="socials__link-text">Pinterest</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--twitter" href="http://twitter.com">
+            <span class="socials__link-text">Twitter</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <section id="login_modal" class="login-modal modal">
+    <div class="modal__overlay"></div>
+    <div class="login-modal__window modal__window">
+      <button class="modal__close">
+        <span class="visually-hidden">Закрыть окно</span>
+      </button>
+      <h2 class="login-modal__title">Log In</h2>
+      <div class="login-modal__form login-form">
+        <form id="login_form" action="/" method="post" enctype="multipart/form-data">
+          <label for="login_email" class="visually-hidden">E-mail</label>
+          <input id="login_email" name="login-email" type="email"  required placeholder="Your E-mail">
+          <label for="login_password" class="visually-hidden">Password</label>
+          <input id="login_password" name="login-password" type="password"  required placeholder="Password">
+          <a href="/recover.html">Forgot your password?</a>
+          <button type="submit">Log In</button>
+        </form>
+        <p class="login-form__sign-up-text">
+          Don’t have an account?
+          <a class="login__sign-up-link" href="/register.html">Sign up</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="cart_modal" class="cart-modal modal">
+    <div class="modal__overlay"></div>
+    <div class="cart-modal__window modal__window">
+      <button class="modal__close">
+        <span class="visually-hidden">Закрыть окно</span>
+      </button>
+      <h2 class="cart-modal__title">The item was added to&nbsp;your cart</h2>
+      <ul class="cart-modal__products-list cart-products">
+        <li class="cart-products__product cart-product-single">
+          <picture>
+            <!-- 1х: 70px; 2x: 140px -->
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/necklace-detail-mobile-img@1x.webp 1x, img/necklace-detail-mobile-img@2x.webp 2x">
+            <!-- 1х: 88px; 2x: 176px -->
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-detail-tablet-img@1x.webp 1x, img/necklace-detail-tablet-img@2x.webp 2x">
+            <!-- 1х: 84px; 2x: 168px -->
+            <source type="image/webp" srcset="img/necklace-detail-desktop-img@1x.webp 1x, img/necklace-detail-desktop-img@2x.webp 2x">
+            <!-- 1х: 84px; 2x: 168px -->
+            <img class="cart-product-single__img"
+                srcset="
+                  img/necklace-detail-desktop-img@2x.jpg 2x,
+                  img/necklace-detail-desktop-img@1x.jpg 1x"
+                src="img/necklace-detail-desktop-img@1x.jpg" width="84" height="79" alt="Necklace detail">
+          </picture>
+          <div class="cart-product-single__info">
+            <h3 class="cart-product-single__title">
+              <a class="cart-product-single__link" href="/product.html">Gold Necklace </a>
+            </h3>
+            <p class="cart-product-single__price">$ 115</p>
+          </div>
+          <div class="cart-product-single__counter">
+            <button class="cart-product-single__plus">
+              <span class="visually-hidden">Добавить единицу товара</span>
+            </button>
+            <p class="cart-product-single__num">1</p>
+            <button class="cart-product-single__minus">
+              <span class="visually-hidden">Убрать единицу товара</span>
+            </button>
+          </div>
+        </li>
+      </ul>
+      <div class="cart-modal__totals">
+        <p class="cart-modal__count-total-text">
+          You have
+          <span class="cart-modal__count-total-value">1</span>
+          item in the cart
+        </p>
+        <p class="cart-modal__price-total-text">
+          Cart subtotal: $
+          <span class="cart-modal__price-total-value">115</span>
+        </p>
+      </div>
+      <div class="cart-modal__buttons">
+        <a class="cart-modal__button button button--transparent" href="/catalog.html">Continue shopping</a>
+        <a class="cart-modal__button button" href="/cart.html">Checkout</a>
+      </div>
+    </div>
+  </section>
+</div>
+<script src="js/script.min.js"></script>
+<script src="js/vendor/picturefill.min.js"></script>
+</body>
+</html>

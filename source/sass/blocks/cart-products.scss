@@ -1,0 +1,28 @@
+.cart-products {
+  @include list-reset();
+  display: flex;
+  flex-wrap: wrap;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: 15px;
+    margin-left: -35px;
+    margin-right: -35px;
+    background-color: #f6f5f4;
+
+    @media (max-width: $mobile-width-max) {
+      margin-top: 14px;
+    }
+  }
+}
+
+.cart-products__product {
+  margin-bottom: 20px;
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 15px;
+  }
+}

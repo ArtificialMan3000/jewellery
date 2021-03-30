@@ -34,10 +34,10 @@
       </a>
     </div>
     <div class="page-header__login login-header">
-      <a class="login-header__link" href="/login.html">Login</a>
+      <a class="login-header__link" href="/login-modal.html" data-modal="login_modal">Login</a>
     </div>
     <div class="page-header__cart cart-header cart-header--img">
-      <a class="cart-header__link" href="/cart.html">
+      <a class="cart-header__link" href="/cart-modal.html" data-modal="cart_modal">
         <span class="cart-header__text">Cart</span>
         <span class="cart-header__counter">0</span>
       </a>
@@ -88,6 +88,12 @@
       <h2 class="catalog__title">Catalog</h2>
       <div class="catalog__filter filter">
         <h3 class="filter__title">Filter</h3>
+        <form class="fiter__form" action="/" method="POST" enctype="multipart/form-data">
+          <div class="filter__field">
+            <label></label>
+
+          </div>
+        </form>
       </div>
       <div class="catalog__grid catalog-grid">
         <ul class="catalog-grid__list">
@@ -109,7 +115,7 @@
               </picture>
             </a>
             <a href="/product.html" class="product-item__link-name">
-              <h3 class="product-item__name">Necklace with amethyst</h3>
+              <h4 class="product-item__name">Necklace with amethyst</h4>
             </a>
             <p class="product-item__price">$ 145</p>
           </li>
@@ -131,7 +137,7 @@
               </picture>
             </a>
             <a href="/product.html" class="product-item__link-name">
-              <h3 class="product-item__name">Necklace with amethyst</h3>
+              <h4 class="product-item__name">Necklace with amethyst</h4>
             </a>
             <p class="product-item__price">$ 145</p>
           </li>
@@ -153,7 +159,7 @@
               </picture>
             </a>
             <a href="/product.html" class="product-item__link-name">
-              <h3 class="product-item__name">Necklace with amethyst</h3>
+              <h4 class="product-item__name">Necklace with amethyst</h4>
             </a>
             <p class="product-item__price">$ 145</p>
           </li>
@@ -175,7 +181,7 @@
               </picture>
             </a>
             <a href="/product.html" class="product-item__link-name">
-              <h3 class="product-item__name">Necklace with amethyst</h3>
+              <h4 class="product-item__name">Necklace with amethyst</h4>
             </a>
             <p class="product-item__price">$ 145</p>
           </li>
@@ -197,7 +203,7 @@
               </picture>
             </a>
             <a href="/product.html" class="product-item__link-name">
-              <h3 class="product-item__name">Necklace with amethyst</h3>
+              <h4 class="product-item__name">Necklace with amethyst</h4>
             </a>
             <p class="product-item__price">$ 145</p>
           </li>
@@ -219,7 +225,7 @@
               </picture>
             </a>
             <a href="/product.html" class="product-item__link-name">
-              <h3 class="product-item__name">Necklace with amethyst</h3>
+              <h4 class="product-item__name">Necklace with amethyst</h4>
             </a>
             <p class="product-item__price">$ 145</p>
           </li>
@@ -241,7 +247,7 @@
               </picture>
             </a>
             <a href="/product.html" class="product-item__link-name">
-              <h3 class="product-item__name">Necklace with amethyst</h3>
+              <h4 class="product-item__name">Necklace with amethyst</h4>
             </a>
             <p class="product-item__price">$ 145</p>
           </li>
@@ -263,7 +269,7 @@
               </picture>
             </a>
             <a href="/product.html" class="product-item__link-name">
-              <h3 class="product-item__name">Necklace with amethyst</h3>
+              <h4 class="product-item__name">Necklace with amethyst</h4>
             </a>
             <p class="product-item__price">$ 145</p>
           </li>
@@ -285,7 +291,7 @@
               </picture>
             </a>
             <a href="/product.html" class="product-item__link-name">
-              <h3 class="product-item__name">Necklace with amethyst</h3>
+              <h4 class="product-item__name">Necklace with amethyst</h4>
             </a>
             <p class="product-item__price">$ 145</p>
           </li>
@@ -307,7 +313,7 @@
               </picture>
             </a>
             <a href="/product.html" class="product-item__link-name">
-              <h3 class="product-item__name">Necklace with amethyst</h3>
+              <h4 class="product-item__name">Necklace with amethyst</h4>
             </a>
             <p class="product-item__price">$ 145</p>
           </li>
@@ -329,7 +335,7 @@
               </picture>
             </a>
             <a href="/product.html" class="product-item__link-name">
-              <h3 class="product-item__name">Necklace with amethyst</h3>
+              <h4 class="product-item__name">Necklace with amethyst</h4>
             </a>
             <p class="product-item__price">$ 145</p>
           </li>
@@ -351,9 +357,32 @@
               </picture>
             </a>
             <a href="/product.html" class="product-item__link-name">
-              <h3 class="product-item__name">Necklace with amethyst</h3>
+              <h4 class="product-item__name">Necklace with amethyst</h4>
             </a>
             <p class="product-item__price">$ 145</p>
+          </li>
+        </ul>
+        <ul class="catalog-grid__pages-list">
+          <li class="catalog-grid__pages-item catalog-grid__pages-item--previous">
+            <a class="catalog-grid__pages-link" href="/catalog.html">Previous</a>
+          </li>
+          <li class="catalog-grid__pages-item catalog-grid__pages-item--current">
+            <a class="catalog-grid__pages-link--current">1</a>
+          </li>
+          <li class="catalog-grid__pages-item">
+            <a class="catalog-grid__pages-link" href="/catalog.html">2</a>
+          </li>
+          <li class="catalog-grid__pages-item">
+            <a class="catalog-grid__pages-link" href="/catalog.html">3</a>
+          </li>
+          <li class="catalog-grid__pages-item">
+            <a class="catalog-grid__pages-link" href="/catalog.html">4</a>
+          </li>
+          <li class="catalog-grid__pages-item">
+            <a class="catalog-grid__pages-link" href="/catalog.html">5</a>
+          </li>
+          <li class="catalog-grid__pages-item catalog-grid__pages-item--next">
+            <a class="catalog-grid__pages-link" href="/catalog.html">Next</a>
           </li>
         </ul>
       </div>
@@ -425,6 +454,86 @@
       </ul>
     </div>
   </footer>
+  <section id="login_modal" class="login-modal modal">
+    <div class="modal__overlay"></div>
+    <div class="login-modal__window modal__window">
+      <button class="modal__close">
+        <span class="visually-hidden">Закрыть окно</span>
+      </button>
+      <h2 class="login-modal__title">Log In</h2>
+      <div class="login-modal__form login-form">
+        <form id="login_form" action="/" method="post" enctype="multipart/form-data">
+          <label for="login_email" class="visually-hidden">E-mail</label>
+          <input id="login_email" name="login-email" type="email"  required placeholder="Your E-mail">
+          <label for="login_password" class="visually-hidden">Password</label>
+          <input id="login_password" name="login-password" type="password"  required placeholder="Password">
+          <a href="/recover.html">Forgot your password?</a>
+          <button type="submit">Log In</button>
+        </form>
+        <p class="login-form__sign-up-text">
+          Don’t have an account?
+          <a class="login__sign-up-link" href="/register.html">Sign up</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="cart_modal" class="cart-modal modal">
+    <div class="modal__overlay"></div>
+    <div class="cart-modal__window modal__window">
+      <button class="modal__close">
+        <span class="visually-hidden">Закрыть окно</span>
+      </button>
+      <h2 class="cart-modal__title">The item was added to&nbsp;your cart</h2>
+      <ul class="cart-modal__products-list cart-products">
+        <li class="cart-products__product cart-product-single">
+          <picture>
+            <!-- 1х: 70px; 2x: 140px -->
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/necklace-detail-mobile-img@1x.webp 1x, img/necklace-detail-mobile-img@2x.webp 2x">
+            <!-- 1х: 88px; 2x: 176px -->
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-detail-tablet-img@1x.webp 1x, img/necklace-detail-tablet-img@2x.webp 2x">
+            <!-- 1х: 84px; 2x: 168px -->
+            <source type="image/webp" srcset="img/necklace-detail-desktop-img@1x.webp 1x, img/necklace-detail-desktop-img@2x.webp 2x">
+            <!-- 1х: 84px; 2x: 168px -->
+            <img class="cart-product-single__img"
+                srcset="
+                  img/necklace-detail-desktop-img@2x.jpg 2x,
+                  img/necklace-detail-desktop-img@1x.jpg 1x"
+                src="img/necklace-detail-desktop-img@1x.jpg" width="84" height="79" alt="Necklace detail">
+          </picture>
+          <div class="cart-product-single__info">
+            <h3 class="cart-product-single__title">
+              <a class="cart-product-single__link" href="/product.html">Gold Necklace </a>
+            </h3>
+            <p class="cart-product-single__price">$ 115</p>
+          </div>
+          <div class="cart-product-single__counter">
+            <button class="cart-product-single__plus">
+              <span class="visually-hidden">Добавить единицу товара</span>
+            </button>
+            <p class="cart-product-single__num">1</p>
+            <button class="cart-product-single__minus">
+              <span class="visually-hidden">Убрать единицу товара</span>
+            </button>
+          </div>
+        </li>
+      </ul>
+      <div class="cart-modal__totals">
+        <p class="cart-modal__count-total-text">
+          You have
+          <span class="cart-modal__count-total-value">1</span>
+          item in the cart
+        </p>
+        <p class="cart-modal__price-total-text">
+          Cart subtotal: $
+          <span class="cart-modal__price-total-value">115</span>
+        </p>
+      </div>
+      <div class="cart-modal__buttons">
+        <a class="cart-modal__button button button--transparent" href="/catalog.html">Continue shopping</a>
+        <a class="cart-modal__button button" href="/cart.html">Checkout</a>
+      </div>
+    </div>
+  </section>
 </div>
 <script src="js/script.min.js"></script>
 <script src="js/vendor/picturefill.min.js"></script>

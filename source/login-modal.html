@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,inital-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jewellery - магазин ювелирных украшений</title>
+  <link rel="preload" href="fonts/Poppins/Poppinsregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<div style="display: none;">
+  <include src="build/img/sprite_auto.svg"></include>
+</div>
+<div class="site-wrapper">
+<section id="login_modal" class="login-modal modal modal--show">
+  <div class="login-modal__window modal__window">
+    <h2 class="login-modal__title">Log In</h2>
+    <div class="login-modal__form login-form">
+      <form id="login_form" action="/" method="post" enctype="multipart/form-data">
+        <label for="login_email" class="visually-hidden">E-mail</label>
+        <input id="login_email" name="login-email" type="email"  required placeholder="Your E-mail">
+        <label for="login_password" class="visually-hidden">Password</label>
+        <input id="login_password" name="login-password" type="password"  required placeholder="Password">
+        <a href="/recover.html">Forgot your password?</a>
+        <button type="submit">Log In</button>
+      </form>
+      <p class="login-form__sign-up-text">
+        Don’t have an account?
+        <a class="login__sign-up-link" href="/register.html">Sign up</a>
+      </p>
+    </div>
+  </div>
+</section>
+</div>
+<script src="js/script.min.js"></script>
+<script src="js/vendor/picturefill.min.js"></script>
+</body>
+</html>

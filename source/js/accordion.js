@@ -61,7 +61,6 @@ window.accordion = (function () {
 
   // Инициализирует аккордеон
   var initAccordion = function () {
-    console.log('acc');
     closeAccordionItems();
     if (accordionTitles && accordionTitles.length > 0) {
       for (var i = 0; i < accordionTitles.length; i++) {
