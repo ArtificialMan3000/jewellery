@@ -34,7 +34,7 @@ window.accordion = (function () {
   var toggleAccordionItem = function (element) {
     if (element && element.classList.contains('accordion')) {
       if (!element.classList.contains('accordion--opened')) {
-        closeAccordionItems();
+        // closeAccordionItems();
         openAccordionItem(element);
       } else {
         closeAccordionItem(element);

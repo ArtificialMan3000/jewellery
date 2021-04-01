@@ -83,6 +83,7 @@ gulp.task("html", function () {
 gulp.task('js', function (done) {
   gulp.src([
     'source/js/vendor/*.js',
+    'source/js/filter.js',
     'source/js/menu.js',
     'source/js/accordion.js',
     'source/js/modal.js',

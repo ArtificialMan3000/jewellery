@@ -85,17 +85,82 @@
       </p>
     </section>
     <section class="catalog">
-      <h2 class="catalog__title">Catalog</h2>
       <div class="catalog__filter filter">
-        <h3 class="filter__title">Filter</h3>
-        <form class="fiter__form" action="/" method="POST" enctype="multipart/form-data">
-          <div class="filter__field">
-            <label></label>
-
-          </div>
-        </form>
+        <h2 class="visually-hidden">Filter</h2>
+        <a class="filter__open-button button" href="/filter.html">Filter</a>
+        <div class="filter__form">
+          <form action="/" method="POST" enctype="multipart/form-data">
+            <button class="filter__close" type="button">
+              <span class="visually-hidden">Закрыть фильтр</span>
+            </button>
+            <div class="form-section">
+              <h3 class="form-title">Product</h3>
+              <div class="form-content">
+                <div class="form-field">
+                  <input id="product_necklaces" type="checkbox" name="product" checked>
+                  <label for="product_necklaces">Necklaces</label>
+                </div>
+                <div class="form-field">
+                  <input id="product_chokers" type="checkbox" name="product" checked>
+                  <label for="product_chokers">Chokers</label>
+                </div>
+                <div class="form-field">
+                  <input id="product_rings" type="checkbox" name="product">
+                  <label for="product_rings">Rings</label>
+                </div>
+                <div class="form-field">
+                  <input id="product_earrings" type="checkbox" name="product" checked>
+                  <label for="product_earrings">Earrings</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-section">
+              <h3 class="form-title">Material</h3>
+              <div class="form-content">
+                <div class="form-field">
+                  <input id="material_gold" type="checkbox" name="material">
+                  <label for="material_gold">Gold</label>
+                </div>
+                <div class="form-field">
+                  <input id="material_silver" type="checkbox" name="material">
+                  <label for="material_silver">Silver</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-section">
+              <h3 class="form-title">Collection</h3>
+              <div class="form-content">
+                <div class="form-field">
+                  <input id="collection_pink-flamingo" type="checkbox" name="collection">
+                  <label for="collection_pink-flamingo">Pink flamingo</label>
+                </div>
+                <div class="form-field">
+                  <input id="collection_dreams" type="checkbox" name="collection">
+                  <label for="collection_dreams">Dreams</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-section">
+              <h3 class="form-title">Price</h3>
+              <div class="form-content">
+                <div class="form-field">
+                  <div id="filter_slider"></div>
+                  <input id="filter_price_from" name="filter-price-from" type="hidden" >
+                  <input id="filter_price_to" name="filter-price-to" type="hidden" >
+                </div>
+              </div>
+            </div>
+            <div class="form-button">
+              <button type="submit">Apply</button>
+            </div>
+            <div class="form-button">
+              <button type="reset">Clear All</button>
+            </div>
+          </form>
+        </div>
       </div>
       <div class="catalog__grid catalog-grid">
+        <h2 class="visually-hidden">Catalog</h2>
         <ul class="catalog-grid__list">
           <li class="catalog-grid__item product-item">
             <a href="/product.html" class="product-item__link-img">
@@ -115,7 +180,7 @@
               </picture>
             </a>
             <a href="/product.html" class="product-item__link-name">
-              <h4 class="product-item__name">Necklace with amethyst</h4>
+              <h3 class="product-item__name">Necklace with amethyst</h3>
             </a>
             <p class="product-item__price">$ 145</p>
           </li>
@@ -137,7 +202,7 @@
               </picture>
             </a>
             <a href="/product.html" class="product-item__link-name">
-              <h4 class="product-item__name">Necklace with amethyst</h4>
+              <h3 class="product-item__name">Necklace with amethyst</h3>
             </a>
             <p class="product-item__price">$ 145</p>
           </li>
@@ -159,7 +224,7 @@
               </picture>
             </a>
             <a href="/product.html" class="product-item__link-name">
-              <h4 class="product-item__name">Necklace with amethyst</h4>
+              <h3 class="product-item__name">Necklace with amethyst</h3>
             </a>
             <p class="product-item__price">$ 145</p>
           </li>
@@ -181,7 +246,7 @@
               </picture>
             </a>
             <a href="/product.html" class="product-item__link-name">
-              <h4 class="product-item__name">Necklace with amethyst</h4>
+              <h3 class="product-item__name">Necklace with amethyst</h3>
             </a>
             <p class="product-item__price">$ 145</p>
           </li>
@@ -203,7 +268,7 @@
               </picture>
             </a>
             <a href="/product.html" class="product-item__link-name">
-              <h4 class="product-item__name">Necklace with amethyst</h4>
+              <h3 class="product-item__name">Necklace with amethyst</h3>
             </a>
             <p class="product-item__price">$ 145</p>
           </li>
@@ -225,7 +290,7 @@
               </picture>
             </a>
             <a href="/product.html" class="product-item__link-name">
-              <h4 class="product-item__name">Necklace with amethyst</h4>
+              <h3 class="product-item__name">Necklace with amethyst</h3>
             </a>
             <p class="product-item__price">$ 145</p>
           </li>
@@ -247,7 +312,7 @@
               </picture>
             </a>
             <a href="/product.html" class="product-item__link-name">
-              <h4 class="product-item__name">Necklace with amethyst</h4>
+              <h3 class="product-item__name">Necklace with amethyst</h3>
             </a>
             <p class="product-item__price">$ 145</p>
           </li>
@@ -269,7 +334,7 @@
               </picture>
             </a>
             <a href="/product.html" class="product-item__link-name">
-              <h4 class="product-item__name">Necklace with amethyst</h4>
+              <h3 class="product-item__name">Necklace with amethyst</h3>
             </a>
             <p class="product-item__price">$ 145</p>
           </li>
@@ -291,7 +356,7 @@
               </picture>
             </a>
             <a href="/product.html" class="product-item__link-name">
-              <h4 class="product-item__name">Necklace with amethyst</h4>
+              <h3 class="product-item__name">Necklace with amethyst</h3>
             </a>
             <p class="product-item__price">$ 145</p>
           </li>
@@ -313,7 +378,7 @@
               </picture>
             </a>
             <a href="/product.html" class="product-item__link-name">
-              <h4 class="product-item__name">Necklace with amethyst</h4>
+              <h3 class="product-item__name">Necklace with amethyst</h3>
             </a>
             <p class="product-item__price">$ 145</p>
           </li>
@@ -335,7 +400,7 @@
               </picture>
             </a>
             <a href="/product.html" class="product-item__link-name">
-              <h4 class="product-item__name">Necklace with amethyst</h4>
+              <h3 class="product-item__name">Necklace with amethyst</h3>
             </a>
             <p class="product-item__price">$ 145</p>
           </li>
@@ -357,7 +422,7 @@
               </picture>
             </a>
             <a href="/product.html" class="product-item__link-name">
-              <h4 class="product-item__name">Necklace with amethyst</h4>
+              <h3 class="product-item__name">Necklace with amethyst</h3>
             </a>
             <p class="product-item__price">$ 145</p>
           </li>
@@ -536,6 +601,5 @@
   </section>
 </div>
 <script src="js/script.min.js"></script>
-<script src="js/vendor/picturefill.min.js"></script>
 </body>
 </html>

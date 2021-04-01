@@ -5,6 +5,9 @@ window.main = (function () {
   // Инициализируем главное меню
   window.menu.initMainMenu();
 
+  // Инициализируем фильтр
+  window.filter.initFilter();
+
   // Инициализируем аккордеон
   window.accordion.initAccordion();
 
