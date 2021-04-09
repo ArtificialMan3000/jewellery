@@ -2,19 +2,6 @@
 
 // Модуль модального окна
 window.modal = (function () {
-  // Модальное окно
-  // var modal;
-  // // Кнопка закрытия модального окна
-  // var modalClose;
-  // // Оверлэй модального окна
-  // var modalOverlay;
-  // // Кнопки вызова модального окна
-  // var modalOpenButtons;
-  // // Поле, на которое должен поставиться фокус
-  // var focusField;
-
-
-
   // Создаёт экземпляр модального окна
   var createModal = function (elem, focusId) {
     var modal = {};

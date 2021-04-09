@@ -25,5 +25,13 @@ window.main = (function () {
 
   // Инициализируем хранение данных формы
   var loginForm = document.querySelector('#login_form');
-  window.formStorage.initFormStorage(loginForm, ['login-email'])
+  window.formStorage.initFormStorage(loginForm, ['login-email']);
+
+  // Инициализируем слайдер
+  var productSlider = window.slider.createSliderInstance('.products-slider');
+  productSlider.initSlider();
+
+  // Инициализирует галерею
+  var gallery = window.gallery.createGallery();
+  gallery.initGallery();
 })();

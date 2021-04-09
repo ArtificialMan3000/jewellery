@@ -88,6 +88,7 @@ gulp.task('js', function (done) {
     'source/js/accordion.js',
     'source/js/modal.js',
     'source/js/form-storage.js',
+    'source/js/slider.js',
     'source/js/main.js'
   ])
       .pipe(concat('script.js'))

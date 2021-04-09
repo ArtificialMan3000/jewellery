@@ -1,0 +1,12 @@
+.gallery {
+  @include container();
+}
+
+.gallery__list {
+  @include list-reset();
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 35.38%;
+  background-color: red;
+}

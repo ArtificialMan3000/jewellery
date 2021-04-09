@@ -47,31 +47,33 @@ window.filter = (function () {
   // Создаёт слайдер диапазона значений
   var makeFilterSlider = function () {
     // Создаём слайдер
-    noUiSlider.create(filterSlider, {
-      start: [55, 155],
-      connect: true,
-      range: {
-          'min': 0,
-          'max': 200
-      },
-      step: 5,
-      tooltips: true,
-      format: wNumb({
-        decimals: 0,
-        prefix: '$ '
+    if (filterSlider) {
+      noUiSlider.create(filterSlider, {
+        start: [55, 155],
+        connect: true,
+        range: {
+            'min': 0,
+            'max': 200
+        },
+        step: 5,
+        tooltips: true,
+        format: wNumb({
+          decimals: 0,
+          prefix: '$ '
+        })
+      });
+
+      // Связываем слайдер с инпутами
+      filterSlider.noUiSlider.on('update', function (values, handle, unencoded) {
+        filterPriceFrom.value = unencoded[0];
+        filterPriceTo.value = unencoded[1];
+      });
+
+      // Сбрасываем фильтр при нажатии на кнопку "reset"
+      filterForm.addEventListener('reset', function () {
+        filterSlider.noUiSlider.reset();
       })
-    });
-
-    // Связываем слайдер с инпутами
-    filterSlider.noUiSlider.on('update', function (values, handle, unencoded) {
-      filterPriceFrom.value = unencoded[0];
-      filterPriceTo.value = unencoded[1];
-    });
-
-    // Сбрасываем фильтр при нажатии на кнопку "reset"
-    filterForm.addEventListener('reset', function () {
-      filterSlider.noUiSlider.reset();
-    })
+    }
   }
 
   // Прячет форму фильтра

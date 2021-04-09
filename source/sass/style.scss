@@ -5,8 +5,11 @@
 
 // Общие стили
 @import "vendor/normalize.scss";
-@import "vendor/nouislider.scss";
 @import "scaffolding.scss";
+
+// Библиотеки
+@import "vendor/nouislider.scss";
+@import "vendor/splide-core.min.scss";
 
 // Контейнер
 @import "blocks/container.scss";
@@ -49,6 +52,7 @@
 @import "blocks/new-in.scss";
 @import "blocks/blog.scss";
 @import "blocks/faq.scss";
+@import "blocks/gallery.scss";
 @import "blocks/catalog.scss";
 @import "blocks/product-card.scss";
 @import "blocks/suggestions.scss";
