@@ -5,19 +5,19 @@
   line-height: normal;
   color: $text-color;
   cursor: pointer;
+}
 
-  .cart-header--img & {
-    @media (max-width: $tablet-width-max) {
-      height: 18px;
-      width: 20px;
-      background-image: url("../img/cart-icon.svg");
-    }
+.cart-header--img .cart-header__link {
+  @media (max-width: $tablet-width-max) {
+    height: 18px;
+    width: 20px;
+    background-image: url("../img/cart-icon.svg");
   }
+}
 
-  .page-header--menu-open .cart-header--img & {
-    @media (max-width: $tablet-width-max) {
-      background-image: url("../img/cart-white-icon.svg");
-    }
+.page-header--menu-open .cart-header--img .cart-header__link {
+  @media (max-width: $tablet-width-max) {
+    background-image: url("../img/cart-white-icon.svg");
   }
 }
 

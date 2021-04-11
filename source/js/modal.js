@@ -25,8 +25,8 @@ window.modal = (function () {
     modal.showModal = function () {
       modal.modal.classList.add('modal--show');
       document.body.classList.add('body-modal-open');
-      if (focusField) {
-        focusField.focus();
+      if (modal.focusField) {
+        modal.focusField.focus();
       }
     };
 
@@ -72,9 +72,7 @@ window.modal = (function () {
     };
 
     return modal;
-  }
-
-
+  };
 
   return {
     createModal: createModal

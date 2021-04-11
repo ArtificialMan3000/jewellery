@@ -8,7 +8,10 @@
     "autoprefixer": "9.5.x",
     "browser-sync": "^2.26.5",
     "del": "^4.1.1",
+    "eslint": "^7.24.0",
+    "eslint-config-htmlacademy": "^3.0.0",
     "gulp": "4.0.x",
+    "gulp-concat": "^2.6.1",
     "gulp-csso": "^3.0.1",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^5.0.3",
@@ -21,7 +24,6 @@
     "gulp-svgstore": "^7.0.1",
     "gulp-uglify": "^3.0.2",
     "gulp-webp": "^4.0.1",
-    "gulp-concat": "^2.6.1",
     "posthtml-include": "^1.2.0",
     "stylelint": "9.10.x",
     "stylelint-config-htmlacademy": "0.1.x"
@@ -29,7 +31,7 @@
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
-    "test": "npm run editorconfig && npm run stylelint",
+    "test": "npm run editorconfig && npm run stylelint && eslint source/js/",
     "img-opt": "gulp img-opt",
     "build": "gulp build",
     "start": "gulp start"
@@ -53,9 +55,9 @@
   "dependencies": {
     "@splidejs/splide": "^2.4.21",
     "httpie": "^1.1.1",
-    "macy": "^2.5.1",
+    "imagesloaded": "^4.1.4",
+    "masonry-layout": "^4.2.2",
     "nouislider": "^14.6.4",
-    "picturefill": "^3.0.3",
     "wnumb": "^1.2.0"
   }
 }

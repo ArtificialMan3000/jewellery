@@ -33,16 +33,16 @@ window.filter = (function () {
       }
     }
     if (filterTitles && filterTitles.length > 0) {
-      for (var i = 0; i < filterTitles.length; i++) {
+      for (i = 0; i < filterTitles.length; i++) {
         filterTitles[i].classList.add('accordion__title');
       }
     }
     if (filterContents && filterContents.length > 0) {
-      for (var i = 0; i < filterContents.length; i++) {
+      for (i = 0; i < filterContents.length; i++) {
         filterContents[i].classList.add('accordion__content');
       }
     }
-  }
+  };
 
   // Создаёт слайдер диапазона значений
   var makeFilterSlider = function () {
@@ -52,8 +52,8 @@ window.filter = (function () {
         start: [55, 155],
         connect: true,
         range: {
-            'min': 0,
-            'max': 200
+          'min': 0,
+          'max': 200
         },
         step: 5,
         tooltips: true,
@@ -72,9 +72,9 @@ window.filter = (function () {
       // Сбрасываем фильтр при нажатии на кнопку "reset"
       filterForm.addEventListener('reset', function () {
         filterSlider.noUiSlider.reset();
-      })
+      });
     }
-  }
+  };
 
   // Прячет форму фильтра
   var closeFilterForm = function () {
@@ -146,5 +146,5 @@ window.filter = (function () {
 
   return {
     initFilter: initFilter
-  }
+  };
 })();

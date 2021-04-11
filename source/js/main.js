@@ -32,6 +32,7 @@ window.main = (function () {
   productSlider.initSlider();
 
   // Инициализирует галерею
-  var gallery = window.gallery.createGallery();
-  gallery.initGallery();
+  var galleryElem = document.querySelector('.gallery__list');
+  var galleryMasonry = window.gallery.createGalleryInstance(galleryElem);
+  galleryMasonry.initGallery();
 })();

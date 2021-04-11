@@ -13,55 +13,57 @@
 
   &--chest {
     padding-top: 181px;
+    padding-bottom: 50px;
     min-height: 463px;
-    background-image: url("../img/envelope-chest-bg-desktop@1x.jpg");
+    background-image: url("../img/envelope-chest-desktop-bg@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/envelope-chest-bg-desktop@2x.jpg");
+      background-image: url("../img/envelope-chest-desktop-bg@2x.jpg");
     }
 
     @media (max-width: $tablet-width-max) {
-      background-image: url("../img/envelope-chest-bg-tablet@1x.jpg");
+      background-image: url("../img/envelope-chest-tablet-bg@1x.jpg");
 
       @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
-        background-image: url("../img/envelope-chest-bg-tablet@2x.jpg");
+        background-image: url("../img/envelope-chest-tablet-bg@2x.jpg");
       }
     }
 
     @media (max-width: $mobile-width-max) {
       padding-top: 189px;
-      background-image: url("../img/envelope-chest-bg-mobile@1x.jpg");
+      background-image: url("../img/envelope-chest-mobile-bg@1x.jpg");
 
       @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
-        background-image: url("../img/envelope-chest-bg-mobile@2x.jpg");
+        background-image: url("../img/envelope-chest-mobile-bg@2x.jpg");
       }
     }
   }
 
   &--bracers {
     padding-top: 93px;
+    padding-bottom: 30px;
     min-height: 261px;
-    background-image: url("../img/envelope-bracers-bg-desktop@1x.jpg");
+    background-image: url("../img/envelope-bracers-desktop-bg@1x.jpg");
     box-shadow: none;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/envelope-bracers-bg-desktop@2x.jpg");
+      background-image: url("../img/envelope-bracers-desktop-bg@2x.jpg");
     }
 
     @media (max-width: $tablet-width-max) {
-      background-image: url("../img/envelope-bracers-bg-tablet@1x.jpg");
+      background-image: url("../img/envelope-bracers-tablet-bg@1x.jpg");
 
       @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
-        background-image: url("../img/envelope-bracers-bg-tablet@2x.jpg");
+        background-image: url("../img/envelope-bracers-tablet-bg@2x.jpg");
       }
     }
 
     @media (max-width: $mobile-width-max) {
-      padding-top: 189px;
-      background-image: url("../img/envelope-bracers-bg-mobile@1x.jpg");
+      padding-top: 89px;
+      background-image: url("../img/envelope-bracers-mobile-bg@1x.jpg");
 
       @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
-        background-image: url("../img/envelope-bracers-bg-mobile@2x.jpg");
+        background-image: url("../img/envelope-bracers-mobile-bg@2x.jpg");
       }
     }
   }

@@ -12,10 +12,6 @@ window.menu = (function () {
   if (pageHeader) {
     var burger = pageHeader.querySelector('.burger');
   }
-  // Корзина
-  if (pageHeader) {
-    var cartHeader = pageHeader.querySelector('.cart-header');
-  }
   // Пункты меню
   if (mainMenu) {
     var menuLinks = mainMenu.querySelectorAll('.main-menu__link');

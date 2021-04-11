@@ -1,5 +1,9 @@
 .catalog-grid {
   width: 74.36%;
+
+  @media (max-width: $tablet-width-max) {
+    width: 100%;
+  }
 }
 
 .catalog-grid__list {
@@ -16,6 +20,10 @@
   margin-left: 15px;
   margin-right: 15px;
   margin-bottom: 40px;
+
+  @media (max-width: $mobile-width-max) {
+    width: calc((100% - 60px) / 2);
+  }
 }
 
 .catalog-grid__pages-list {

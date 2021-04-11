@@ -67,10 +67,10 @@
       height: 12px;
     }
   }
+}
 
-  .accordion--opened &::before {
-    background-image: url("../img/arrow-up-expand-icon.svg");
-  }
+.accordion--opened .faq-single__title::before {
+  background-image: url("../img/arrow-up-expand-icon.svg");
 }
 
 .faq-single__text {

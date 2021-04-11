@@ -26,7 +26,7 @@
       </form>
     </div>
     <div class="page-header__logo logo">
-      <a class="logo__link" href="/" aria-label="Ссылка на главную страницу">
+      <a class="logo__link" aria-label="Ссылка на главную страницу">
         <svg class="logo__img" width="66" height="66" aria-labelledby="svg-heading-logo" xmlns="http://www.w3.org/2000/svg">
           <title id="svg-heading-logo">Логотип Jewellery</title>
           <use xlink:href="#sprite-logo-header"></use>
@@ -34,10 +34,10 @@
       </a>
     </div>
     <div class="page-header__login login-header">
-      <a class="login-header__link" href="/login-modal.html" data-modal="login_modal">Login</a>
+      <a class="login-header__link" href="login-modal.html" data-modal="login_modal">Login</a>
     </div>
     <div class="page-header__cart cart-header cart-header--img">
-      <a class="cart-header__link" href="/cart-modal.html" data-modal="cart_modal">
+      <a class="cart-header__link" href="cart-modal.html" data-modal="cart_modal">
         <span class="cart-header__text">Cart</span>
         <span class="cart-header__counter">0</span>
       </a>
@@ -46,32 +46,32 @@
       <!-- .main-menu--show показывает меню, переключается с помощью js-->
       <ul class="main-menu__list">
         <li class="main-menu__item">
-          <a class="main-menu__link" href="/">What’s new</a>
+          <a class="main-menu__link">What’s new</a>
         </li>
         <li class="main-menu__item">
-          <a class="main-menu__link" href="/catalog.html">Chokers</a>
+          <a class="main-menu__link" href="catalog.html">Chokers</a>
         </li>
         <li class="main-menu__item">
-          <a class="main-menu__link" href="/catalog.html">Necklaces</a>
+          <a class="main-menu__link" href="catalog.html">Necklaces</a>
         </li>
         <li class="main-menu__item">
-          <a class="main-menu__link" href="/catalog.html">Rings</a>
+          <a class="main-menu__link" href="catalog.html">Rings</a>
         </li>
         <li class="main-menu__item">
-          <a class="main-menu__link" href="/catalog.html">Earrings</a>
+          <a class="main-menu__link" href="catalog.html">Earrings</a>
         </li>
       </ul>
     </nav>
     <div class="page-header__small-menu small-menu">
       <ul class="small-menu__list">
         <li class="small-menu__item">
-          <a href="/about.html" class="small-menu__link">About CH</a>
+          <a href="about.html" class="small-menu__link">About CH</a>
         </li>
         <li class="small-menu__item">
-          <a href="/stores.html" class="small-menu__link">Stores & Hours</a>
+          <a href="stores.html" class="small-menu__link">Stores & Hours</a>
         </li>
         <li class="small-menu__item">
-          <a href="/contacts.html" class="small-menu__link">Contact Us</a>
+          <a href="contacts.html" class="small-menu__link">Contact Us</a>
         </li>
       </ul>
     </div>
@@ -86,9 +86,9 @@
     </section>
     <section class="new-in">
       <h2 class="new-in__title">New In</h2>
-      <a class="new-in__link" href="/catalog.html">Shop Now</a>
+      <a class="new-in__link" href="catalog.html">Shop Now</a>
       <div class="new-in__slider products-slider splide">
-        <div class="splide__arrows">
+        <div class="products-slider__arrows splide__arrows">
           <button class="products-slider__arrow-left splide__arrow splide__arrow--prev">
             <span class="visually-hidden">Листать влево</span>
           </button>
@@ -99,329 +99,318 @@
         <div class="products-slider__list-wrapper splide__track">
           <ul class="products-slider__list splide__list">
             <li class="products-slider__item product-item splide__slide">
-              <a href="/product.html" class="product-item__link-img">
+              <a href="product.html" class="product-item__link-img">
                 <picture>
                   <!-- 1х: 130px; 2x: 260px -->
-                  <source type="image/webp" media="(max-width: 767px)" srcset="img/necklace-with-amethyst-mobile-img@1x.webp 1x, img/necklace-with-amethyst-mobile-img@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/necklace-with-amethyst-mobile@1x.webp 1x, img/necklace-with-amethyst-mobile@2x.webp 2x">
                   <!-- 1х: 324px; 2x: 648px -->
-                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-with-amethyst-tablet-img@1x.webp 1x, img/necklace-with-amethyst-tablet-img@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-with-amethyst-tablet@1x.webp 1x, img/necklace-with-amethyst-tablet@2x.webp 2x">
                   <!-- 1х: 270px; 2x: 540px -->
-                  <source type="image/webp" srcset="img/necklace-with-amethyst-desktop-img@1x.webp 1x, img/necklace-with-amethyst-desktop-img@2x.webp 2x">
+                  <source type="image/webp" srcset="img/necklace-with-amethyst-desktop@1x.webp 1x, img/necklace-with-amethyst-desktop@2x.webp 2x">
                   <!-- 1х: 270px; 2x: 540px -->
                   <img class="product-item__img"
                       srcset="
-                        img/necklace-with-amethyst-desktop-img@2x.jpg 2x,
-                        img/necklace-with-amethyst-desktop-img@1x.jpg 1x"
-                      src="img/necklace-with-amethyst-desktop-img@1x.jpg" width="270" height="284" alt="Necklace with amethyst">
+                        img/necklace-with-amethyst-desktop@2x.jpg 2x,
+                        img/necklace-with-amethyst-desktop@1x.jpg 1x"
+                      src="img/necklace-with-amethyst-desktop@1x.jpg" width="270" height="284" alt="Necklace with amethyst">
                 </picture>
               </a>
-              <a href="/product.html" class="product-item__link-name">
+              <a href="product.html" class="product-item__link-name">
                 <h3 class="product-item__name">Necklace with amethyst1</h3>
               </a>
               <p class="product-item__price">$ 145</p>
             </li>
             <li class="products-slider__item product-item splide__slide">
-              <a href="/product.html" class="product-item__link-img">
+              <a href="product.html" class="product-item__link-img">
                 <picture>
                   <!-- 1х: 130px; 2x: 260px -->
-                  <source type="image/webp" media="(max-width: 767px)" srcset="img/necklace-with-amethyst-mobile-img@1x.webp 1x, img/necklace-with-amethyst-mobile-img@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/layered-choker-necklace-mobile@1x.webp 1x, img/layered-choker-necklace-mobile@2x.webp 2x">
                   <!-- 1х: 324px; 2x: 648px -->
-                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-with-amethyst-tablet-img@1x.webp 1x, img/necklace-with-amethyst-tablet-img@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/layered-choker-necklace-tablet@1x.webp 1x, img/layered-choker-necklace-tablet@2x.webp 2x">
                   <!-- 1х: 270px; 2x: 540px -->
-                  <source type="image/webp" srcset="img/necklace-with-amethyst-desktop-img@1x.webp 1x, img/necklace-with-amethyst-desktop-img@2x.webp 2x">
+                  <source type="image/webp" srcset="img/layered-choker-necklace-desktop@1x.webp 1x, img/layered-choker-necklace-desktop@2x.webp 2x">
                   <!-- 1х: 270px; 2x: 540px -->
                   <img class="product-item__img"
                       srcset="
-                        img/necklace-with-amethyst-desktop-img@2x.jpg 2x,
-                        img/necklace-with-amethyst-desktop-img@1x.jpg 1x"
-                      src="img/necklace-with-amethyst-desktop-img@1x.jpg" width="270" height="284" alt="Necklace with amethyst">
+                        img/layered-choker-necklace-desktop@2x.jpg 2x,
+                        img/layered-choker-necklace-desktop@1x.jpg 1x"
+                      src="img/layered-choker-necklace-desktop@1x.jpg" width="270" height="284" alt="Layered choker necklace">
                 </picture>
               </a>
-              <a href="/product.html" class="product-item__link-name">
-                <h3 class="product-item__name">Necklace with amethyst2</h3>
+              <a href="product.html" class="product-item__link-name">
+                <h3 class="product-item__name">Layered сhoker</h3>
               </a>
-              <p class="product-item__price">$ 145</p>
+              <p class="product-item__price">$ 115</p>
             </li>
             <li class="products-slider__item product-item splide__slide">
-              <a href="/product.html" class="product-item__link-img">
+              <a href="product.html" class="product-item__link-img">
                 <picture>
                   <!-- 1х: 130px; 2x: 260px -->
-                  <source type="image/webp" media="(max-width: 767px)" srcset="img/necklace-with-amethyst-mobile-img@1x.webp 1x, img/necklace-with-amethyst-mobile-img@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/dainty-gold-necklace-mobile@1x.webp 1x, img/dainty-gold-necklace-mobile@2x.webp 2x">
                   <!-- 1х: 324px; 2x: 648px -->
-                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-with-amethyst-tablet-img@1x.webp 1x, img/necklace-with-amethyst-tablet-img@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/dainty-gold-necklace-tablet@1x.webp 1x, img/dainty-gold-necklace-tablet@2x.webp 2x">
                   <!-- 1х: 270px; 2x: 540px -->
-                  <source type="image/webp" srcset="img/necklace-with-amethyst-desktop-img@1x.webp 1x, img/necklace-with-amethyst-desktop-img@2x.webp 2x">
+                  <source type="image/webp" srcset="img/dainty-gold-necklace-desktop@1x.webp 1x, img/dainty-gold-necklace-desktop@2x.webp 2x">
                   <!-- 1х: 270px; 2x: 540px -->
                   <img class="product-item__img"
                       srcset="
-                        img/necklace-with-amethyst-desktop-img@2x.jpg 2x,
-                        img/necklace-with-amethyst-desktop-img@1x.jpg 1x"
-                      src="img/necklace-with-amethyst-desktop-img@1x.jpg" width="270" height="284" alt="Necklace with amethyst">
+                        img/dainty-gold-necklace-desktop@2x.jpg 2x,
+                        img/dainty-gold-necklace-desktop@1x.jpg 1x"
+                      src="img/dainty-gold-necklace-desktop@1x.jpg" width="270" height="284" alt="Dainty gold necklace">
                 </picture>
               </a>
-              <a href="/product.html" class="product-item__link-name">
-                <h3 class="product-item__name">Necklace with amethyst3</h3>
+              <a href="product.html" class="product-item__link-name">
+                <h3 class="product-item__name">Gold chain</h3>
               </a>
-              <p class="product-item__price">$ 145</p>
+              <p class="product-item__price">$ 215</p>
             </li>
             <li class="products-slider__item product-item splide__slide">
-              <a href="/product.html" class="product-item__link-img">
+              <a href="product.html" class="product-item__link-img">
                 <picture>
                   <!-- 1х: 130px; 2x: 260px -->
-                  <source type="image/webp" media="(max-width: 767px)" srcset="img/necklace-with-amethyst-mobile-img@1x.webp 1x, img/necklace-with-amethyst-mobile-img@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/galaxy-earrings-mobile@1x.webp 1x, img/galaxy-earrings-mobile@2x.webp 2x">
                   <!-- 1х: 324px; 2x: 648px -->
-                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-with-amethyst-tablet-img@1x.webp 1x, img/necklace-with-amethyst-tablet-img@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/galaxy-earrings-tablet@1x.webp 1x, img/galaxy-earrings-tablet@2x.webp 2x">
                   <!-- 1х: 270px; 2x: 540px -->
-                  <source type="image/webp" srcset="img/necklace-with-amethyst-desktop-img@1x.webp 1x, img/necklace-with-amethyst-desktop-img@2x.webp 2x">
+                  <source type="image/webp" srcset="img/galaxy-earrings-desktop@1x.webp 1x, img/galaxy-earrings-desktop@2x.webp 2x">
                   <!-- 1х: 270px; 2x: 540px -->
                   <img class="product-item__img"
                       srcset="
-                        img/necklace-with-amethyst-desktop-img@2x.jpg 2x,
-                        img/necklace-with-amethyst-desktop-img@1x.jpg 1x"
-                      src="img/necklace-with-amethyst-desktop-img@1x.jpg" width="270" height="284" alt="Necklace with amethyst">
+                        img/galaxy-earrings-desktop@2x.jpg 2x,
+                        img/galaxy-earrings-desktop@1x.jpg 1x"
+                      src="img/galaxy-earrings-desktop@1x.jpg" width="270" height="284" alt="Galaxy earrings">
                 </picture>
               </a>
-              <a href="/product.html" class="product-item__link-name">
-                <h3 class="product-item__name">Necklace with amethyst4</h3>
+              <a href="product.html" class="product-item__link-name">
+                <h3 class="product-item__name">Galaxy earrings</h3>
               </a>
-              <p class="product-item__price">$ 145</p>
+              <p class="product-item__price">$ 95</p>
             </li>
             <li class="products-slider__item product-item splide__slide">
-              <a href="/product.html" class="product-item__link-img">
+              <a href="product.html" class="product-item__link-img">
                 <picture>
                   <!-- 1х: 130px; 2x: 260px -->
-                  <source type="image/webp" media="(max-width: 767px)" srcset="img/necklace-with-amethyst-mobile-img@1x.webp 1x, img/necklace-with-amethyst-mobile-img@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/necklace-with-amethyst-mobile@1x.webp 1x, img/necklace-with-amethyst-mobile@2x.webp 2x">
                   <!-- 1х: 324px; 2x: 648px -->
-                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-with-amethyst-tablet-img@1x.webp 1x, img/necklace-with-amethyst-tablet-img@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-with-amethyst-tablet@1x.webp 1x, img/necklace-with-amethyst-tablet@2x.webp 2x">
                   <!-- 1х: 270px; 2x: 540px -->
-                  <source type="image/webp" srcset="img/necklace-with-amethyst-desktop-img@1x.webp 1x, img/necklace-with-amethyst-desktop-img@2x.webp 2x">
+                  <source type="image/webp" srcset="img/necklace-with-amethyst-desktop@1x.webp 1x, img/necklace-with-amethyst-desktop@2x.webp 2x">
                   <!-- 1х: 270px; 2x: 540px -->
                   <img class="product-item__img"
                       srcset="
-                        img/necklace-with-amethyst-desktop-img@2x.jpg 2x,
-                        img/necklace-with-amethyst-desktop-img@1x.jpg 1x"
-                      src="img/necklace-with-amethyst-desktop-img@1x.jpg" width="270" height="284" alt="Necklace with amethyst">
+                        img/necklace-with-amethyst-desktop@2x.jpg 2x,
+                        img/necklace-with-amethyst-desktop@1x.jpg 1x"
+                      src="img/necklace-with-amethyst-desktop@1x.jpg" width="270" height="284" alt="Necklace with amethyst">
                 </picture>
               </a>
-              <a href="/product.html" class="product-item__link-name">
+              <a href="product.html" class="product-item__link-name">
                 <h3 class="product-item__name">Necklace with amethyst5</h3>
               </a>
               <p class="product-item__price">$ 145</p>
             </li>
             <li class="products-slider__item product-item splide__slide">
-              <a href="/product.html" class="product-item__link-img">
+              <a href="product.html" class="product-item__link-img">
                 <picture>
                   <!-- 1х: 130px; 2x: 260px -->
-                  <source type="image/webp" media="(max-width: 767px)" srcset="img/necklace-with-amethyst-mobile-img@1x.webp 1x, img/necklace-with-amethyst-mobile-img@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/layered-choker-necklace-mobile@1x.webp 1x, img/layered-choker-necklace-mobile@2x.webp 2x">
                   <!-- 1х: 324px; 2x: 648px -->
-                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-with-amethyst-tablet-img@1x.webp 1x, img/necklace-with-amethyst-tablet-img@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/layered-choker-necklace-tablet@1x.webp 1x, img/layered-choker-necklace-tablet@2x.webp 2x">
                   <!-- 1х: 270px; 2x: 540px -->
-                  <source type="image/webp" srcset="img/necklace-with-amethyst-desktop-img@1x.webp 1x, img/necklace-with-amethyst-desktop-img@2x.webp 2x">
+                  <source type="image/webp" srcset="img/layered-choker-necklace-desktop@1x.webp 1x, img/layered-choker-necklace-desktop@2x.webp 2x">
                   <!-- 1х: 270px; 2x: 540px -->
                   <img class="product-item__img"
                       srcset="
-                        img/necklace-with-amethyst-desktop-img@2x.jpg 2x,
-                        img/necklace-with-amethyst-desktop-img@1x.jpg 1x"
-                      src="img/necklace-with-amethyst-desktop-img@1x.jpg" width="270" height="284" alt="Necklace with amethyst">
+                        img/layered-choker-necklace-desktop@2x.jpg 2x,
+                        img/layered-choker-necklace-desktop@1x.jpg 1x"
+                      src="img/layered-choker-necklace-desktop@1x.jpg" width="270" height="284" alt="Layered choker necklace">
                 </picture>
               </a>
-              <a href="/product.html" class="product-item__link-name">
-                <h3 class="product-item__name">Necklace with amethyst6</h3>
+              <a href="product.html" class="product-item__link-name">
+                <h3 class="product-item__name">Layered сhoker</h3>
               </a>
-              <p class="product-item__price">$ 145</p>
+              <p class="product-item__price">$ 115</p>
             </li>
             <li class="products-slider__item product-item splide__slide">
-              <a href="/product.html" class="product-item__link-img">
+              <a href="product.html" class="product-item__link-img">
                 <picture>
                   <!-- 1х: 130px; 2x: 260px -->
-                  <source type="image/webp" media="(max-width: 767px)" srcset="img/necklace-with-amethyst-mobile-img@1x.webp 1x, img/necklace-with-amethyst-mobile-img@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/dainty-gold-necklace-mobile@1x.webp 1x, img/dainty-gold-necklace-mobile@2x.webp 2x">
                   <!-- 1х: 324px; 2x: 648px -->
-                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-with-amethyst-tablet-img@1x.webp 1x, img/necklace-with-amethyst-tablet-img@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/dainty-gold-necklace-tablet@1x.webp 1x, img/dainty-gold-necklace-tablet@2x.webp 2x">
                   <!-- 1х: 270px; 2x: 540px -->
-                  <source type="image/webp" srcset="img/necklace-with-amethyst-desktop-img@1x.webp 1x, img/necklace-with-amethyst-desktop-img@2x.webp 2x">
+                  <source type="image/webp" srcset="img/dainty-gold-necklace-desktop@1x.webp 1x, img/dainty-gold-necklace-desktop@2x.webp 2x">
                   <!-- 1х: 270px; 2x: 540px -->
                   <img class="product-item__img"
                       srcset="
-                        img/necklace-with-amethyst-desktop-img@2x.jpg 2x,
-                        img/necklace-with-amethyst-desktop-img@1x.jpg 1x"
-                      src="img/necklace-with-amethyst-desktop-img@1x.jpg" width="270" height="284" alt="Necklace with amethyst">
+                        img/dainty-gold-necklace-desktop@2x.jpg 2x,
+                        img/dainty-gold-necklace-desktop@1x.jpg 1x"
+                      src="img/dainty-gold-necklace-desktop@1x.jpg" width="270" height="284" alt="Dainty gold necklace">
                 </picture>
               </a>
-              <a href="/product.html" class="product-item__link-name">
-                <h3 class="product-item__name">Necklace with amethyst7</h3>
+              <a href="product.html" class="product-item__link-name">
+                <h3 class="product-item__name">Gold chain</h3>
               </a>
-              <p class="product-item__price">$ 145</p>
+              <p class="product-item__price">$ 215</p>
             </li>
             <li class="products-slider__item product-item splide__slide">
-              <a href="/product.html" class="product-item__link-img">
+              <a href="product.html" class="product-item__link-img">
                 <picture>
                   <!-- 1х: 130px; 2x: 260px -->
-                  <source type="image/webp" media="(max-width: 767px)" srcset="img/necklace-with-amethyst-mobile-img@1x.webp 1x, img/necklace-with-amethyst-mobile-img@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/galaxy-earrings-mobile@1x.webp 1x, img/galaxy-earrings-mobile@2x.webp 2x">
                   <!-- 1х: 324px; 2x: 648px -->
-                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-with-amethyst-tablet-img@1x.webp 1x, img/necklace-with-amethyst-tablet-img@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/galaxy-earrings-tablet@1x.webp 1x, img/galaxy-earrings-tablet@2x.webp 2x">
                   <!-- 1х: 270px; 2x: 540px -->
-                  <source type="image/webp" srcset="img/necklace-with-amethyst-desktop-img@1x.webp 1x, img/necklace-with-amethyst-desktop-img@2x.webp 2x">
+                  <source type="image/webp" srcset="img/galaxy-earrings-desktop@1x.webp 1x, img/galaxy-earrings-desktop@2x.webp 2x">
                   <!-- 1х: 270px; 2x: 540px -->
                   <img class="product-item__img"
                       srcset="
-                        img/necklace-with-amethyst-desktop-img@2x.jpg 2x,
-                        img/necklace-with-amethyst-desktop-img@1x.jpg 1x"
-                      src="img/necklace-with-amethyst-desktop-img@1x.jpg" width="270" height="284" alt="Necklace with amethyst">
+                        img/galaxy-earrings-desktop@2x.jpg 2x,
+                        img/galaxy-earrings-desktop@1x.jpg 1x"
+                      src="img/galaxy-earrings-desktop@1x.jpg" width="270" height="284" alt="Galaxy earrings">
                 </picture>
               </a>
-              <a href="/product.html" class="product-item__link-name">
-                <h3 class="product-item__name">Necklace with amethyst8</h3>
+              <a href="product.html" class="product-item__link-name">
+                <h3 class="product-item__name">Galaxy earrings</h3>
               </a>
-              <p class="product-item__price">$ 145</p>
+              <p class="product-item__price">$ 95</p>
             </li>
             <li class="products-slider__item product-item splide__slide">
-              <a href="/product.html" class="product-item__link-img">
+              <a href="product.html" class="product-item__link-img">
                 <picture>
                   <!-- 1х: 130px; 2x: 260px -->
-                  <source type="image/webp" media="(max-width: 767px)" srcset="img/necklace-with-amethyst-mobile-img@1x.webp 1x, img/necklace-with-amethyst-mobile-img@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/necklace-with-amethyst-mobile@1x.webp 1x, img/necklace-with-amethyst-mobile@2x.webp 2x">
                   <!-- 1х: 324px; 2x: 648px -->
-                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-with-amethyst-tablet-img@1x.webp 1x, img/necklace-with-amethyst-tablet-img@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-with-amethyst-tablet@1x.webp 1x, img/necklace-with-amethyst-tablet@2x.webp 2x">
                   <!-- 1х: 270px; 2x: 540px -->
-                  <source type="image/webp" srcset="img/necklace-with-amethyst-desktop-img@1x.webp 1x, img/necklace-with-amethyst-desktop-img@2x.webp 2x">
+                  <source type="image/webp" srcset="img/necklace-with-amethyst-desktop@1x.webp 1x, img/necklace-with-amethyst-desktop@2x.webp 2x">
                   <!-- 1х: 270px; 2x: 540px -->
                   <img class="product-item__img"
                       srcset="
-                        img/necklace-with-amethyst-desktop-img@2x.jpg 2x,
-                        img/necklace-with-amethyst-desktop-img@1x.jpg 1x"
-                      src="img/necklace-with-amethyst-desktop-img@1x.jpg" width="270" height="284" alt="Necklace with amethyst">
+                        img/necklace-with-amethyst-desktop@2x.jpg 2x,
+                        img/necklace-with-amethyst-desktop@1x.jpg 1x"
+                      src="img/necklace-with-amethyst-desktop@1x.jpg" width="270" height="284" alt="Necklace with amethyst">
                 </picture>
               </a>
-              <a href="/product.html" class="product-item__link-name">
+              <a href="product.html" class="product-item__link-name">
                 <h3 class="product-item__name">Necklace with amethyst9</h3>
               </a>
               <p class="product-item__price">$ 145</p>
             </li>
             <li class="products-slider__item product-item splide__slide">
-              <a href="/product.html" class="product-item__link-img">
+              <a href="product.html" class="product-item__link-img">
                 <picture>
                   <!-- 1х: 130px; 2x: 260px -->
-                  <source type="image/webp" media="(max-width: 767px)" srcset="img/necklace-with-amethyst-mobile-img@1x.webp 1x, img/necklace-with-amethyst-mobile-img@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/layered-choker-necklace-mobile@1x.webp 1x, img/layered-choker-necklace-mobile@2x.webp 2x">
                   <!-- 1х: 324px; 2x: 648px -->
-                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-with-amethyst-tablet-img@1x.webp 1x, img/necklace-with-amethyst-tablet-img@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/layered-choker-necklace-tablet@1x.webp 1x, img/layered-choker-necklace-tablet@2x.webp 2x">
                   <!-- 1х: 270px; 2x: 540px -->
-                  <source type="image/webp" srcset="img/necklace-with-amethyst-desktop-img@1x.webp 1x, img/necklace-with-amethyst-desktop-img@2x.webp 2x">
+                  <source type="image/webp" srcset="img/layered-choker-necklace-desktop@1x.webp 1x, img/layered-choker-necklace-desktop@2x.webp 2x">
                   <!-- 1х: 270px; 2x: 540px -->
                   <img class="product-item__img"
                       srcset="
-                        img/necklace-with-amethyst-desktop-img@2x.jpg 2x,
-                        img/necklace-with-amethyst-desktop-img@1x.jpg 1x"
-                      src="img/necklace-with-amethyst-desktop-img@1x.jpg" width="270" height="284" alt="Necklace with amethyst">
+                        img/layered-choker-necklace-desktop@2x.jpg 2x,
+                        img/layered-choker-necklace-desktop@1x.jpg 1x"
+                      src="img/layered-choker-necklace-desktop@1x.jpg" width="270" height="284" alt="Layered choker necklace">
                 </picture>
               </a>
-              <a href="/product.html" class="product-item__link-name">
-                <h3 class="product-item__name">Necklace with amethyst10</h3>
+              <a href="product.html" class="product-item__link-name">
+                <h3 class="product-item__name">Layered сhoker</h3>
               </a>
-              <p class="product-item__price">$ 145</p>
+              <p class="product-item__price">$ 115</p>
             </li>
             <li class="products-slider__item product-item splide__slide">
-              <a href="/product.html" class="product-item__link-img">
+              <a href="product.html" class="product-item__link-img">
                 <picture>
                   <!-- 1х: 130px; 2x: 260px -->
-                  <source type="image/webp" media="(max-width: 767px)" srcset="img/necklace-with-amethyst-mobile-img@1x.webp 1x, img/necklace-with-amethyst-mobile-img@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/dainty-gold-necklace-mobile@1x.webp 1x, img/dainty-gold-necklace-mobile@2x.webp 2x">
                   <!-- 1х: 324px; 2x: 648px -->
-                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-with-amethyst-tablet-img@1x.webp 1x, img/necklace-with-amethyst-tablet-img@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/dainty-gold-necklace-tablet@1x.webp 1x, img/dainty-gold-necklace-tablet@2x.webp 2x">
                   <!-- 1х: 270px; 2x: 540px -->
-                  <source type="image/webp" srcset="img/necklace-with-amethyst-desktop-img@1x.webp 1x, img/necklace-with-amethyst-desktop-img@2x.webp 2x">
+                  <source type="image/webp" srcset="img/dainty-gold-necklace-desktop@1x.webp 1x, img/dainty-gold-necklace-desktop@2x.webp 2x">
                   <!-- 1х: 270px; 2x: 540px -->
                   <img class="product-item__img"
                       srcset="
-                        img/necklace-with-amethyst-desktop-img@2x.jpg 2x,
-                        img/necklace-with-amethyst-desktop-img@1x.jpg 1x"
-                      src="img/necklace-with-amethyst-desktop-img@1x.jpg" width="270" height="284" alt="Necklace with amethyst">
+                        img/dainty-gold-necklace-desktop@2x.jpg 2x,
+                        img/dainty-gold-necklace-desktop@1x.jpg 1x"
+                      src="img/dainty-gold-necklace-desktop@1x.jpg" width="270" height="284" alt="Dainty gold necklace">
                 </picture>
               </a>
-              <a href="/product.html" class="product-item__link-name">
-                <h3 class="product-item__name">Necklace with amethyst11</h3>
+              <a href="product.html" class="product-item__link-name">
+                <h3 class="product-item__name">Gold chain</h3>
               </a>
-              <p class="product-item__price">$ 145</p>
+              <p class="product-item__price">$ 215</p>
             </li>
             <li class="products-slider__item product-item splide__slide">
-              <a href="/product.html" class="product-item__link-img">
+              <a href="product.html" class="product-item__link-img">
                 <picture>
                   <!-- 1х: 130px; 2x: 260px -->
-                  <source type="image/webp" media="(max-width: 767px)" srcset="img/necklace-with-amethyst-mobile-img@1x.webp 1x, img/necklace-with-amethyst-mobile-img@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/galaxy-earrings-mobile@1x.webp 1x, img/galaxy-earrings-mobile@2x.webp 2x">
                   <!-- 1х: 324px; 2x: 648px -->
-                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-with-amethyst-tablet-img@1x.webp 1x, img/necklace-with-amethyst-tablet-img@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/galaxy-earrings-tablet@1x.webp 1x, img/galaxy-earrings-tablet@2x.webp 2x">
                   <!-- 1х: 270px; 2x: 540px -->
-                  <source type="image/webp" srcset="img/necklace-with-amethyst-desktop-img@1x.webp 1x, img/necklace-with-amethyst-desktop-img@2x.webp 2x">
+                  <source type="image/webp" srcset="img/galaxy-earrings-desktop@1x.webp 1x, img/galaxy-earrings-desktop@2x.webp 2x">
                   <!-- 1х: 270px; 2x: 540px -->
                   <img class="product-item__img"
                       srcset="
-                        img/necklace-with-amethyst-desktop-img@2x.jpg 2x,
-                        img/necklace-with-amethyst-desktop-img@1x.jpg 1x"
-                      src="img/necklace-with-amethyst-desktop-img@1x.jpg" width="270" height="284" alt="Necklace with amethyst">
+                        img/galaxy-earrings-desktop@2x.jpg 2x,
+                        img/galaxy-earrings-desktop@1x.jpg 1x"
+                      src="img/galaxy-earrings-desktop@1x.jpg" width="270" height="284" alt="Galaxy earrings">
                 </picture>
               </a>
-              <a href="/product.html" class="product-item__link-name">
-                <h3 class="product-item__name">Necklace with amethyst12</h3>
+              <a href="product.html" class="product-item__link-name">
+                <h3 class="product-item__name">Galaxy earrings</h3>
               </a>
-              <p class="product-item__price">$ 145</p>
+              <p class="product-item__price">$ 95</p>
             </li>
           </ul>
         </div>
-        <!-- <ul class="products-slider__pages-list">
-          <li class="products-slider__pages-item">
-            <button class="products-slider__pages-button products-slider__pages-button--current">1</button>
-          </li>
-          <li class="products-slider__pages-item">
-            <button class="products-slider__pages-button">2</button>
-          </li>
-          <li class="products-slider__pages-item">
-            <button class="products-slider__pages-button">3</button>
-          </li>
-        </ul> -->
       </div>
     </section>
     <section class="blog">
       <h2 class="blog__title">Blog</h2>
-      <a class="blog__read-all" href="/catalog.html">Read All</a>
+      <a class="blog__read-all" href="catalog.html">Read All</a>
       <div class="blog__previews previews">
         <div class="previews__col previews__col--left">
           <div class="previews__item preview-single preview-single--small preview-single--small--right">
             <picture>
               <!-- 1х: 290px; 2x: 256px -->
-              <source type="image/webp" media="(max-width: 767px)" srcset="img/jess-harper-sunday-img-mobile@1x.webp 1x, img/jess-harper-sunday-img-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/jess-harper-sunday-mobile-img@1x.webp 1x, img/jess-harper-sunday-mobile-img@2x.webp 2x">
               <!-- 1х: 339px; 2x: 300px -->
-              <source type="image/webp" media="(max-width: 1023px)" srcset="img/jess-harper-sunday-img-tablet@1x.webp 1x, img/jess-harper-sunday-img-tablet@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/jess-harper-sunday-tablet-img@1x.webp 1x, img/jess-harper-sunday-tablet-img@2x.webp 2x">
               <!-- 1х: 285px; 2x: 300px -->
-              <source type="image/webp" srcset="img/jess-harper-sunday-img-desktop@1x.webp 1x, img/jess-harper-sunday-img-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/jess-harper-sunday-desktop-img@1x.webp 1x, img/jess-harper-sunday-desktop-img@2x.webp 2x">
               <!-- 1х: 339px; 2x: 300px -->
               <img class="preview-single__img preview-single__img--left"
                   srcset="
-                    img/jess-harper-sunday-img-desktop@2x.jpg 2x,
-                    img/jess-harper-sunday-img-desktop@1x.jpg 1x"
-                  src="img/jess-harper-sunday-img-desktop@1x.jpg" width="339" height="300" alt="jess harper sunday">
+                    img/jess-harper-sunday-desktop-img@2x.jpg 2x,
+                    img/jess-harper-sunday-desktop-img@1x.jpg 1x"
+                  src="img/jess-harper-sunday-desktop-img@1x.jpg" width="339" height="300" alt="jess harper sunday">
             </picture>
             <div class="preview-single__info">
               <p class="preview-single__date">September 30, 2019</p>
               <h3 class="preview-single__title">How to care for your jewellery</h3>
-              <a class="preview-single__read-more" href="/blog.html">Read Article</a>
+              <a class="preview-single__read-more" href="blog.html">Read Article</a>
             </div>
           </div>
           <div class="previews__item preview-single preview-single--small preview-single--small--left">
             <picture>
               <!-- 1х: 290px; 2x: 256px -->
-              <source type="image/webp" media="(max-width: 767px)" srcset="img/alex-holyoake-img-mobile@1x.webp 1x, img/alex-holyoake-img-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/alex-holyoake-mobile-img@1x.webp 1x, img/alex-holyoake-mobile-img@2x.webp 2x">
               <!-- 1х: 339px; 2x: 300px -->
-              <source type="image/webp" media="(max-width: 1023px)" srcset="img/alex-holyoake-img-tablet@1x.webp 1x, img/alex-holyoake-img-tablet@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/alex-holyoake-tablet-img@1x.webp 1x, img/alex-holyoake-tablet-img@2x.webp 2x">
               <!-- 1х: 285px; 2x: 300px -->
-              <source type="image/webp" srcset="img/alex-holyoake-img-desktop@1x.webp 1x, img/alex-holyoake-img-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/alex-holyoake-desktop-img@1x.webp 1x, img/alex-holyoake-desktop-img@2x.webp 2x">
               <!-- 1х: 339px; 2x: 300px -->
               <img class="preview-single__img preview-single__img--right"
                   srcset="
-                    img/alex-holyoake-img-desktop@2x.jpg 2x,
-                    img/alex-holyoake-img-desktop@1x.jpg 1x"
-                  src="img/alex-holyoake-img-desktop@1x.jpg" width="339" height="300" alt="alex-holyoake">
+                    img/alex-holyoake-desktop-img@2x.jpg 2x,
+                    img/alex-holyoake-desktop-img@1x.jpg 1x"
+                  src="img/alex-holyoake-desktop-img@1x.jpg" width="339" height="300" alt="alex-holyoake">
             </picture>
             <div class="preview-single__info">
               <p class="preview-single__date">September 23, 2019</p>
               <h3 class="preview-single__title">Power of crystals</h3>
-              <a class="preview-single__read-more" href="/blog.html">Read Article</a>
+              <a class="preview-single__read-more" href="blog.html">Read Article</a>
             </div>
           </div>
         </div>
@@ -429,22 +418,22 @@
           <div class="previews__item preview-single preview-single--big">
             <picture>
               <!-- 1х: 290px; 2x: 256px -->
-              <source type="image/webp" media="(max-width: 767px)" srcset="img/alve-odonnell-img-mobile@1x.webp 1x, img/alve-odonnell-img-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/alve-odonnell-mobile-img@1x.webp 1x, img/alve-odonnell-mobile-img@2x.webp 2x">
               <!-- 1х: 339px; 2x: 300px -->
-              <source type="image/webp" media="(max-width: 1023px)" srcset="img/alve-odonnell-img-tablet@1x.webp 1x, img/alve-odonnell-img-tablet@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/alve-odonnell-tablet-img@1x.webp 1x, img/alve-odonnell-tablet-img@2x.webp 2x">
               <!-- 1х: 570px; 2x: 630px -->
-              <source type="image/webp" srcset="img/alve-odonnell-img-desktop@1x.webp 1x, img/alve-odonnell-img-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/alve-odonnell-desktop-img@1x.webp 1x, img/alve-odonnell-desktop-img@2x.webp 2x">
               <!-- 1х: 570px; 2x: 630px -->
               <img class="preview-single__img preview-single__img--full"
                   srcset="
-                    img/alve-odonnell-img-desktop@2x.jpg 2x,
-                    img/alve-odonnell-img-desktop@1x.jpg 1x"
-                  src="img/alve-odonnell-img-desktop@1x.jpg" width="339" height="300" alt="alve-odonnell">
+                    img/alve-odonnell-desktop-img@2x.jpg 2x,
+                    img/alve-odonnell-desktop-img@1x.jpg 1x"
+                  src="img/alve-odonnell-desktop-img@1x.jpg" width="339" height="300" alt="alve-odonnell">
             </picture>
             <div class="preview-single__info preview-single__info--big">
               <p class="preview-single__date">September 16, 2019</p>
               <h3 class="preview-single__title">AW 19 trends</h3>
-              <a class="preview-single__read-more" href="/blog.html">Read Article</a>
+              <a class="preview-single__read-more" href="blog.html">Read Article</a>
             </div>
           </div>
         </div>
@@ -472,31 +461,31 @@
       </ul>
     </section>
     <section class="gallery">
-      <div class="gallery__title">@Chjewellery</div>
+      <h2 class="gallery__title">@Chjewellery</h2>
       <div class="gallery__link">Follow Us</div>
-      <ul class="gallery__list">
-        <!-- <li class="gallery__item gallery__item--1">
-          <img class="gallery__img" src="img/square-necks-desktop@1x.jpg" alt="square-necks-desktop">
-        </li>
-        <li class="gallery__item gallery__item--2">
-          <img class="gallery__img" src="img/square-necks-desktop@1x.jpg" alt="">
-        </li>
-        <li class="gallery__item gallery__item--3">
-          <img class="gallery__img" src="img/square-necks-desktop@1x.jpg" alt="">
-        </li>
-        <li class="gallery__item gallery__item--4">
-          <img class="gallery__img" src="img/square-necks-desktop@1x.jpg" alt="">
-        </li>
-        <li class="gallery__item gallery__item--5">
-          <img class="gallery__img" src="img/square-necks-desktop@1x.jpg" alt="">
-        </li>
-        <li class="gallery__item gallery__item--6">
-          <img class="gallery__img" src="img/square-necks-desktop@1x.jpg" alt="">
-        </li>
-        <li class="gallery__item gallery__item--7">
-          <img class="gallery__img" src="img/square-necks-desktop@1x.jpg" alt="">
-        </li> -->
-      </ul>
+        <ul class="gallery__list">
+          <li class="gallery__item gallery__item--1">
+            <img class="gallery__img" src="img/square-necks-desktop@1x.jpg" alt="square-necks-desktop">
+          </li>
+          <li class="gallery__item gallery__item--2">
+            <img class="gallery__img" src="img/woman-with-necks-desktop@1x.jpg" alt="">
+          </li>
+          <li class="gallery__item gallery__item--3">
+            <img class="gallery__img" src="img/hand-with-jewellery-desktop@1x.jpg" alt="">
+          </li>
+          <li class="gallery__item gallery__item--4">
+            <img class="gallery__img" src="img/circle-necks-desktop@1x.jpg" alt="">
+          </li>
+          <li class="gallery__item gallery__item--5">
+            <img class="gallery__img" src="img/booklet-with-jewellery-desktop@1x.jpg" alt="">
+          </li>
+          <li class="gallery__item gallery__item--6">
+            <img class="gallery__img" src="img/girl-with-rings-desktop@1x.jpg" alt="">
+          </li>
+          <li class="gallery__item gallery__item--7">
+            <img class="gallery__img" src="img/pendant-desktop@1x.jpg" alt="">
+          </li>
+        </ul>
     </section>
   </main>
   <footer class="page-footer">
@@ -511,32 +500,32 @@
     <div class="page-footer__footer-menu footer-menu">
       <ul class="footer-menu__list">
         <li class="footer-menu__item">
-          <a class="footer-menu__link" href="/">Ordering & Payment</a>
+          <a class="footer-menu__link" href="#">Ordering & Payment</a>
         </li>
         <li class="footer-menu__item">
-          <a class="footer-menu__link" href="/">Terms & Conditions</a>
+          <a class="footer-menu__link" href="#">Terms & Conditions</a>
         </li>
         <li class="footer-menu__item">
-          <a class="footer-menu__link" href="/">Returns & Exchanges</a>
+          <a class="footer-menu__link" href="#">Returns & Exchanges</a>
         </li>
         <li class="footer-menu__item">
-          <a class="footer-menu__link" href="/">Delivery</a>
+          <a class="footer-menu__link" href="#">Delivery</a>
         </li>
       </ul>
     </div>
     <div class="page-footer__about-menu about-menu">
       <ul class="about-menu__list">
         <li class="about-menu__item">
-          <a class="about-menu__link" href="/">About CH</a>
+          <a class="about-menu__link" href="#">About CH</a>
         </li>
         <li class="about-menu__item">
-          <a class="about-menu__link" href="/">Stores & Hours</a>
+          <a class="about-menu__link" href="#">Stores & Hours</a>
         </li>
         <li class="about-menu__item">
-          <a class="about-menu__link" href="/">Jobs</a>
+          <a class="about-menu__link" href="#">Jobs</a>
         </li>
         <li class="about-menu__item">
-          <a class="about-menu__link" href="/">Contact Us</a>
+          <a class="about-menu__link" href="#">Contact Us</a>
         </li>
       </ul>
     </div>
@@ -578,12 +567,12 @@
           <input id="login_email" name="login-email" type="email"  required placeholder="Your E-mail">
           <label for="login_password" class="visually-hidden">Password</label>
           <input id="login_password" name="login-password" type="password"  required placeholder="Password">
-          <a href="/recover.html">Forgot your password?</a>
+          <a href="recover.html">Forgot your password?</a>
           <button type="submit">Log In</button>
         </form>
         <p class="login-form__sign-up-text">
           Don’t have an account?
-          <a class="login__sign-up-link" href="/register.html">Sign up</a>
+          <a class="login-form__sign-up-link" href="register.html">Sign up</a>
         </p>
       </div>
     </div>
@@ -613,7 +602,7 @@
           </picture>
           <div class="cart-product-single__info">
             <h3 class="cart-product-single__title">
-              <a class="cart-product-single__link" href="/product.html">Gold Necklace </a>
+              <a class="cart-product-single__link" href="product.html">Gold Necklace </a>
             </h3>
             <p class="cart-product-single__price">$ 115</p>
           </div>
@@ -640,13 +629,13 @@
         </p>
       </div>
       <div class="cart-modal__buttons">
-        <a class="cart-modal__button button button--transparent" href="/catalog.html">Continue shopping</a>
-        <a class="cart-modal__button button" href="/cart.html">Checkout</a>
+        <a class="cart-modal__button button button--transparent" href="catalog.html">Continue shopping</a>
+        <a class="cart-modal__button button" href="cart.html">Checkout</a>
       </div>
     </div>
   </section>
 </div>
-<script src="js/script.min.js"></script>
-<script src="js/vendor/picturefill.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/vendor.js"></script>
 </body>
 </html>
