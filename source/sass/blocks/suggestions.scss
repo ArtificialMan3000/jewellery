@@ -2,20 +2,23 @@
   @include container();
   display: flex;
   flex-direction: column;
+  margin-bottom: 125px;
   padding-top: 130px;
 
   @media (max-width: $tablet-width-max) {
+    margin-bottom: 75px;
     padding-top: 80px;
   }
 
   @media (max-width: $mobile-width-max) {
+    margin-bottom: 65px;
     padding-top: 70px;
   }
 }
 
 .suggestions__title {
   margin-top: -10px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   align-self: center;
   font-family: $title-font-family;
   font-weight: bold;
@@ -24,10 +27,15 @@
   @media (max-width: $tablet-width-max) {
     margin-bottom: 20px;
   }
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 18px;
+  }
 }
 
 .suggestions__link {
   align-self: center;
+  padding-bottom: 4px;
   border-bottom: 1px solid $brand-color;
   text-align: center;
   font-weight: 500;

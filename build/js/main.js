@@ -12244,7 +12244,7 @@ window.accordion = (function () {
 
   // Инициализирует аккордеон
   var initAccordion = function () {
-    closeAccordionItems();
+    // closeAccordionItems();
     if (accordionTitles && accordionTitles.length > 0) {
       for (var i = 0; i < accordionTitles.length; i++) {
         addAccordionTitleClickHandler(accordionTitles[i]);
@@ -12431,20 +12431,15 @@ window.slider = (function () {
         perPage: 4,
         keyboard: 'focused',
         width: '100%',
-        // fixedWidth: '22.5%',
-        // gap: '2.56%',
         gap: 30,
         breakpoints: {
           1023: {
             perPage: 2,
-            // gap: '4.42%'
           },
           767: {
             perPage: 2,
-            // gap: '10.34%'
           }
         },
-        // autoWidth: true,
         pagination: false
       });
       slider.splide.mount();
@@ -12521,12 +12516,6 @@ window.slider = (function () {
     return slider;
   };
 
-  // Заменяет активную кнопку
-  // var changeActiveButton = function (oldIndex, newIndex) {
-  //   slider.paginationButtons[oldIndex].classList.remove('products-slider__pages-button--current');
-  //   slider.paginationButtons[newIndex].classList.add('products-slider__pages-button--current');
-  // }
-
   return {
     createSliderInstance: createSliderInstance
   };
@@ -12547,14 +12536,7 @@ window.gallery = (function () {
     // Экземпляр галереи Masonry
     gallery.masonry = null;
     gallery.createMasonryGallery = function () {
-      // gallery.masonry = new Shuffle( gallery.element, {
-      //   // options
-      //   itemSelector: '.gallery__item',
-      //   columnWidth: 1,
-      //   // gutterWidth: 30
-      // });
       gallery.masonry = new Masonry(gallery.element, {
-        // options
         itemSelector: '.gallery__item',
         columnWidth: 1,
         percentPosition: true,
@@ -12563,9 +12545,6 @@ window.gallery = (function () {
       imagesLoaded(gallery.element, function () {
         gallery.masonry.layout();
       });
-      // gallery.masonry.imagesLoaded().progress(function () {
-      //   gallery.masonry.masonry();
-      // })
     };
 
     gallery.initGallery = function () {

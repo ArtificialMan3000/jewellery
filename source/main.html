@@ -87,6 +87,7 @@
     <section class="new-in">
       <h2 class="new-in__title">New In</h2>
       <a class="new-in__link" href="catalog.html">Shop Now</a>
+      <!-- .splide - класс для библиотеки splide.js -->
       <div class="new-in__slider products-slider splide">
         <div class="products-slider__arrows splide__arrows">
           <button class="products-slider__arrow-left splide__arrow splide__arrow--prev">
@@ -116,7 +117,7 @@
                 </picture>
               </a>
               <a href="product.html" class="product-item__link-name">
-                <h3 class="product-item__name">Necklace with amethyst1</h3>
+                <h3 class="product-item__name">Necklace with amethyst</h3>
               </a>
               <p class="product-item__price">$ 145</p>
             </li>
@@ -204,7 +205,7 @@
                 </picture>
               </a>
               <a href="product.html" class="product-item__link-name">
-                <h3 class="product-item__name">Necklace with amethyst5</h3>
+                <h3 class="product-item__name">Necklace with amethyst</h3>
               </a>
               <p class="product-item__price">$ 145</p>
             </li>
@@ -292,7 +293,7 @@
                 </picture>
               </a>
               <a href="product.html" class="product-item__link-name">
-                <h3 class="product-item__name">Necklace with amethyst9</h3>
+                <h3 class="product-item__name">Necklace with amethyst</h3>
               </a>
               <p class="product-item__price">$ 145</p>
             </li>
@@ -444,19 +445,27 @@
       <ul class="faq__list">
         <li class="faq__item faq-single accordion accordion--opened">
           <h3 class="faq-single__title accordion__title">What materials are the&nbsp;jewellery made&nbsp;of?</h3>
-          <p class="faq-single__text accordion__content">Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+          <div class="faq-single__text accordion__content">
+            <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+          </div>
         </li>
         <li class="faq__item faq-single accordion">
           <h3 class="faq-single__title accordion__title">Which countries do&nbsp;you&nbsp;deliver to?</h3>
-          <p class="faq-single__text accordion__content">Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+          <div class="faq-single__text accordion__content">
+            <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+          </div>
         </li>
         <li class="faq__item faq-single accordion">
           <h3 class="faq-single__title accordion__title">What are the payment&nbsp;methods?</h3>
-          <p class="faq-single__text accordion__content">Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+          <div class="faq-single__text accordion__content">
+            <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+          </div>
         </li>
         <li class="faq__item faq-single accordion">
           <h3 class="faq-single__title accordion__title">Can I return the jewellery&nbsp;if it didn’t fit me?</h3>
-          <p class="faq-single__text accordion__content">Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+          <div class="faq-single__text accordion__content">
+            <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+          </div>
         </li>
       </ul>
     </section>
@@ -465,25 +474,25 @@
       <div class="gallery__link">Follow Us</div>
         <ul class="gallery__list">
           <li class="gallery__item gallery__item--1">
-            <img class="gallery__img" src="img/square-necks-desktop@1x.jpg" alt="square-necks-desktop">
+            <img class="gallery__img" src="img/square-necks-desktop@1x.jpg" alt="Square necks">
           </li>
           <li class="gallery__item gallery__item--2">
-            <img class="gallery__img" src="img/woman-with-necks-desktop@1x.jpg" alt="">
+            <img class="gallery__img" src="img/woman-with-necks-desktop@1x.jpg" alt="Woman with necks">
           </li>
           <li class="gallery__item gallery__item--3">
-            <img class="gallery__img" src="img/hand-with-jewellery-desktop@1x.jpg" alt="">
+            <img class="gallery__img" src="img/hand-with-jewellery-desktop@1x.jpg" alt="Hand with jewellery">
           </li>
           <li class="gallery__item gallery__item--4">
-            <img class="gallery__img" src="img/circle-necks-desktop@1x.jpg" alt="">
+            <img class="gallery__img" src="img/circle-necks-desktop@1x.jpg" alt="Circle necks">
           </li>
           <li class="gallery__item gallery__item--5">
-            <img class="gallery__img" src="img/booklet-with-jewellery-desktop@1x.jpg" alt="">
+            <img class="gallery__img" src="img/booklet-with-jewellery-desktop@1x.jpg" alt="Booklet with jewellery">
           </li>
           <li class="gallery__item gallery__item--6">
-            <img class="gallery__img" src="img/girl-with-rings-desktop@1x.jpg" alt="">
+            <img class="gallery__img" src="img/girl-with-rings-desktop@1x.jpg" alt="Girl with rings">
           </li>
           <li class="gallery__item gallery__item--7">
-            <img class="gallery__img" src="img/pendant-desktop@1x.jpg" alt="">
+            <img class="gallery__img" src="img/pendant-desktop@1x.jpg" alt="Pendant">
           </li>
         </ul>
     </section>
@@ -492,10 +501,12 @@
     <div class="page-footer__subscription subscription">
       <h2 class="subscription__title">The good stuff in your inbox </h2>
       <p class="subscription__descr">News and updates from CH. No spam, we promise.</p>
-      <form class="subscription__form" action="/" method="POST" enctype="text/plain">
-        <input class="subscription__input" name="subscr-email" type="email" placeholder="Your E-mail">
-        <button class="subscription__button" type="submit">Sign Up</button>
-      </form>
+      <div class="subscription__form">
+        <form action="/" method="POST" enctype="text/plain">
+          <input name="subscr-email" type="email" placeholder="Your E-mail">
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
     </div>
     <div class="page-footer__footer-menu footer-menu">
       <ul class="footer-menu__list">

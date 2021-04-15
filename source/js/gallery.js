@@ -13,14 +13,7 @@ window.gallery = (function () {
     // Экземпляр галереи Masonry
     gallery.masonry = null;
     gallery.createMasonryGallery = function () {
-      // gallery.masonry = new Shuffle( gallery.element, {
-      //   // options
-      //   itemSelector: '.gallery__item',
-      //   columnWidth: 1,
-      //   // gutterWidth: 30
-      // });
       gallery.masonry = new Masonry(gallery.element, {
-        // options
         itemSelector: '.gallery__item',
         columnWidth: 1,
         percentPosition: true,
@@ -29,9 +22,6 @@ window.gallery = (function () {
       imagesLoaded(gallery.element, function () {
         gallery.masonry.layout();
       });
-      // gallery.masonry.imagesLoaded().progress(function () {
-      //   gallery.masonry.masonry();
-      // })
     };
 
     gallery.initGallery = function () {

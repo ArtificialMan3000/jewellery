@@ -30,20 +30,15 @@ window.slider = (function () {
         perPage: 4,
         keyboard: 'focused',
         width: '100%',
-        // fixedWidth: '22.5%',
-        // gap: '2.56%',
         gap: 30,
         breakpoints: {
           1023: {
             perPage: 2,
-            // gap: '4.42%'
           },
           767: {
             perPage: 2,
-            // gap: '10.34%'
           }
         },
-        // autoWidth: true,
         pagination: false
       });
       slider.splide.mount();
@@ -119,12 +114,6 @@ window.slider = (function () {
 
     return slider;
   };
-
-  // Заменяет активную кнопку
-  // var changeActiveButton = function (oldIndex, newIndex) {
-  //   slider.paginationButtons[oldIndex].classList.remove('products-slider__pages-button--current');
-  //   slider.paginationButtons[newIndex].classList.add('products-slider__pages-button--current');
-  // }
 
   return {
     createSliderInstance: createSliderInstance

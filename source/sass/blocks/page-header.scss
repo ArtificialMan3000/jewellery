@@ -38,11 +38,7 @@
 
 .page-header__search {
   width: 200px;
-  // margin-top: 12px;
   margin-top: 24px;
-  // width: calc-percent-width($width, "desktop"); //24.15%
-  // margin-right: calc-percent-width(352px, "desktop");
-  // margin-right: 28.09%;
 
   @media (max-width: $tablet-width-max) {
     display: none;
@@ -61,7 +57,6 @@
   margin-left: calc(50% - 233px);
   margin-right: auto;
   min-width: 66px;
-  // width: calc-percent-width(66px, "desktop");
   width: 66px;
   height: 66px;
 
@@ -81,7 +76,6 @@
 }
 
 .page-header__login {
-  // margin-top: 12px;
   margin-top: 24px;
   margin-left: auto;
   margin-right: 38px;
@@ -102,7 +96,6 @@
 }
 
 .page-header__cart {
-  // margin-top: 12px;
   margin-top: 24px;
 
   @media (max-width: $tablet-width-max) {
@@ -123,7 +116,6 @@
 
 .page-header__menu {
   width: 100%;
-  // margin-top: 39px;
   margin-top: 50px;
 }
 

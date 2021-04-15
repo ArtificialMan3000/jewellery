@@ -1,25 +1,7 @@
 .button {
   @include button();
-  // padding-left: 30px;
-  // padding-right: 30px;
-  // padding-top: 23px;
-  // padding-bottom: 23px;
-  // border: 1px solid $brand-color;
-  // background-color: $brand-color;
-  // font-weight: 500;
-  // font-size: 16px;
-  // text-align: center;
-  // color: $white;
-  // cursor: pointer;
-
-  // &:hover,
-  // &:focus {
-  //   opacity: 0.7;
-  // }
 }
 
 .button--transparent {
   @include button--transparent();
-  // background-color: transparent;
-  // color: $text-color;
 }

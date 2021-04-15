@@ -43,7 +43,6 @@
 }
 
 .subscription__form {
-  display: flex;
   margin-top: 35px;
   border-bottom: 1px solid $white;
 
@@ -56,9 +55,12 @@
   }
 }
 
-.subscription__input {
+.subscription__form form {
+  display: flex;
+}
+
+.subscription__form input {
   width: 398px;
-  // flex-grow: 1;
   flex-shrink: 1;
   padding-left: 0;
   padding-right: 0;
@@ -88,7 +90,7 @@
   }
 }
 
-.subscription__button {
+.subscription__form button {
   flex-shrink: 0;
   padding-right: 41px;
   padding-left: 0;

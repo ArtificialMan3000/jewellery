@@ -1,10 +1,17 @@
 .catalog {
   @include container();
   display: flex;
+  margin-bottom: 76px;
   padding-top: 80px;
 
   @media (max-width: $tablet-width-max) {
     flex-wrap: wrap;
+    padding-top: 50px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 65px;
+    padding-top: 40px;
   }
 }
 
@@ -16,5 +23,9 @@
     width: 100%;
     margin-right: 0;
     margin-bottom: 50px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 40px;
   }
 }

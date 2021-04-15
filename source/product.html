@@ -462,10 +462,12 @@
     <div class="page-footer__subscription subscription">
       <h2 class="subscription__title">The good stuff in your inbox </h2>
       <p class="subscription__descr">News and updates from CH. No spam, we promise.</p>
-      <form class="subscription__form" action="/" method="POST" enctype="text/plain">
-        <input class="subscription__input" name="subscr-email" type="email" placeholder="Your E-mail">
-        <button class="subscription__button" type="submit">Sign Up</button>
-      </form>
+      <div class="subscription__form">
+        <form action="/" method="POST" enctype="text/plain">
+          <input name="subscr-email" type="email" placeholder="Your E-mail">
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
     </div>
     <div class="page-footer__footer-menu footer-menu">
       <ul class="footer-menu__list">

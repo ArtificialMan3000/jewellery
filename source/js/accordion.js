@@ -61,7 +61,7 @@ window.accordion = (function () {
 
   // Инициализирует аккордеон
   var initAccordion = function () {
-    closeAccordionItems();
+    // closeAccordionItems();
     if (accordionTitles && accordionTitles.length > 0) {
       for (var i = 0; i < accordionTitles.length; i++) {
         addAccordionTitleClickHandler(accordionTitles[i]);
