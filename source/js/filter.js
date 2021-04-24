@@ -25,6 +25,16 @@ window.filter = (function () {
     var filterCloseButton = filterForm.querySelector('.filter__close');
   }
 
+  // Скрывает поля ввода диапазона цен
+  var hidePriceInputs = function () {
+    if (filterPriceFrom) {
+      filterPriceFrom.parentNode.classList.add('visually-hidden');
+    }
+    if (filterPriceTo) {
+      filterPriceTo.parentNode.classList.add('visually-hidden');
+    }
+  };
+
   // Добавляет к элементам фильтра классы аккордеона
   var makeFilterToAccordion = function () {
     if (filterSections && filterSections.length > 0) {
@@ -78,6 +88,11 @@ window.filter = (function () {
 
   // Прячет форму фильтра
   var closeFilterForm = function () {
+    // Показываем кнопку открытия
+    if (filterOpenButton) {
+      filterOpenButton.classList.remove('filter__open-button--hide');
+    }
+    // Скрываем форму фильтра
     if (filterForm) {
       filterForm.classList.remove('filter__form--show');
     }
@@ -94,10 +109,15 @@ window.filter = (function () {
 
   // Открывает форму фильтра
   var openFilterForm = function () {
+    // Скрываем кнопку открытия
+    if (filterOpenButton) {
+      filterOpenButton.classList.add('filter__open-button--hide');
+    }
+    // Показываем форму фильтра
     if (filterForm) {
       filterForm.classList.add('filter__form--show');
     }
-    window.scroll(0, 0);
+    // window.scroll(0, 0);
 
     // Вешаем на кнопку подтверждения фильтра обработчик для закрытия фильтра
     if (filterSubmitButton) {
@@ -128,10 +148,14 @@ window.filter = (function () {
 
   // Инициализирует модуль
   var initFilter = function () {
+    // Скрываем поля ввода диапазона цен
+    hidePriceInputs();
     // Вешаем на кнопку открытия фильтра обработчик для открытия фильтра
     if (filterOpenButton) {
       filterOpenButton.addEventListener('click', openButtonClickHandler);
     }
+    // Закрываем фильтр
+    closeFilterForm();
     // Вешаем на Esc обработчик  для закрытия фильтра
     document.addEventListener('keydown', function (evt) {
       if (evt.key === 'Escape') {

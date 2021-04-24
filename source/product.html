@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,inital-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Jewellery - магазин ювелирных украшений</title>
+  <meta name="description" content="Jewellery - jewelry shop">
+  <title>Jewellery - jewelry shop</title>
   <link rel="preload" href="fonts/Poppins/Poppinsregular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -46,7 +47,7 @@
       <!-- .main-menu--show показывает меню, переключается с помощью js-->
       <ul class="main-menu__list">
         <li class="main-menu__item">
-          <a class="main-menu__link" href="">What’s new</a>
+          <a class="main-menu__link" href="main.html">What’s new</a>
         </li>
         <li class="main-menu__item">
           <a class="main-menu__link" href="catalog.html">Chokers</a>
@@ -167,7 +168,7 @@
             </div>
           </dl>
         </div>
-        <a class="product-info__add-button button" href="add-to-cart.html">Add to cart</a>
+        <a class="product-info__add-button button" href="cart-modal.html" data-modal="cart_modal">Add to cart</a>
         <div class="product-info__terms">
           <p class="product-info__term-single">14 Day Returns</p>
           <p class="product-info__term-single">2-Year Warranty</p>
@@ -529,85 +530,89 @@
   <section id="login_modal" class="login-modal modal">
     <div class="modal__overlay"></div>
     <div class="login-modal__window modal__window">
-      <button class="modal__close">
-        <span class="visually-hidden">Закрыть окно</span>
-      </button>
-      <h2 class="login-modal__title">Log In</h2>
-      <div class="login-modal__form login-form">
-        <form id="login_form" action="/" method="post" enctype="multipart/form-data">
-          <label for="login_email" class="visually-hidden">E-mail</label>
-          <input id="login_email" name="login-email" type="email"  required placeholder="Your E-mail">
-          <label for="login_password" class="visually-hidden">Password</label>
-          <input id="login_password" name="login-password" type="password"  required placeholder="Password">
-          <a href="recover.html">Forgot your password?</a>
-          <button type="submit">Log In</button>
-        </form>
-        <p class="login-form__sign-up-text">
-          Don’t have an account?
-          <a class="login-form__sign-up-link" href="register.html">Sign up</a>
-        </p>
+      <div class="login-modal__content modal__content">
+        <h2 class="login-modal__title">Log In</h2>
+        <div class="login-modal__form login-form">
+          <form id="login_form" action="/" method="post" enctype="multipart/form-data">
+            <label for="login_email" class="visually-hidden">E-mail</label>
+            <input id="login_email" name="login-email" type="email"  required placeholder="Your E-mail">
+            <label for="login_password" class="visually-hidden">Password</label>
+            <input id="login_password" name="login-password" type="password"  required placeholder="Password">
+            <a href="recover.html">Forgot your password?</a>
+            <button type="submit">Log In</button>
+          </form>
+          <p class="login-form__sign-up-text">
+            Don’t have an account?
+            <a class="login-form__sign-up-link" href="register.html">Sign up</a>
+          </p>
+        </div>
+        <button class="modal__close">
+          <span class="visually-hidden">Закрыть окно</span>
+        </button>
       </div>
     </div>
   </section>
   <section id="cart_modal" class="cart-modal modal">
     <div class="modal__overlay"></div>
     <div class="cart-modal__window modal__window">
-      <button class="modal__close">
-        <span class="visually-hidden">Закрыть окно</span>
-      </button>
-      <h2 class="cart-modal__title">The item was added to&nbsp;your cart</h2>
-      <ul class="cart-modal__products-list cart-products">
-        <li class="cart-products__product cart-product-single">
-          <picture>
-            <!-- 1х: 70px; 2x: 140px -->
-            <source type="image/webp" media="(max-width: 767px)" srcset="img/necklace-detail-mobile-img@1x.webp 1x, img/necklace-detail-mobile-img@2x.webp 2x">
-            <!-- 1х: 88px; 2x: 176px -->
-            <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-detail-tablet-img@1x.webp 1x, img/necklace-detail-tablet-img@2x.webp 2x">
-            <!-- 1х: 84px; 2x: 168px -->
-            <source type="image/webp" srcset="img/necklace-detail-desktop-img@1x.webp 1x, img/necklace-detail-desktop-img@2x.webp 2x">
-            <!-- 1х: 84px; 2x: 168px -->
-            <img class="cart-product-single__img"
-                srcset="
-                  img/necklace-detail-desktop-img@2x.jpg 2x,
-                  img/necklace-detail-desktop-img@1x.jpg 1x"
-                src="img/necklace-detail-desktop-img@1x.jpg" width="84" height="79" alt="Necklace detail">
-          </picture>
-          <div class="cart-product-single__info">
-            <h3 class="cart-product-single__title">
-              <a class="cart-product-single__link" href="product.html">Gold Necklace </a>
-            </h3>
-            <p class="cart-product-single__price">$ 115</p>
-          </div>
-          <div class="cart-product-single__counter">
-            <button class="cart-product-single__plus">
-              <span class="visually-hidden">Добавить единицу товара</span>
-            </button>
-            <p class="cart-product-single__num">1</p>
-            <button class="cart-product-single__minus">
-              <span class="visually-hidden">Убрать единицу товара</span>
-            </button>
-          </div>
-        </li>
-      </ul>
-      <div class="cart-modal__totals">
-        <p class="cart-modal__count-total-text">
-          You have
-          <span class="cart-modal__count-total-value">1</span>
-          item in the cart
-        </p>
-        <p class="cart-modal__price-total-text">
-          Cart subtotal: $
-          <span class="cart-modal__price-total-value">115</span>
-        </p>
-      </div>
-      <div class="cart-modal__buttons">
-        <a class="cart-modal__button button button--transparent" href="catalog.html">Continue shopping</a>
-        <a class="cart-modal__button button" href="cart.html">Checkout</a>
+      <div class="cart-modal__content modal__content">
+        <h2 class="cart-modal__title">The item was added to&nbsp;your cart</h2>
+        <ul class="cart-modal__products-list cart-products">
+          <li class="cart-products__product cart-product-single">
+            <picture>
+              <!-- 1х: 70px; 2x: 140px -->
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/necklace-detail-mobile-img@1x.webp 1x, img/necklace-detail-mobile-img@2x.webp 2x">
+              <!-- 1х: 88px; 2x: 176px -->
+              <source type="image/webp" media="(max-width: 1023px)" srcset="img/necklace-detail-tablet-img@1x.webp 1x, img/necklace-detail-tablet-img@2x.webp 2x">
+              <!-- 1х: 84px; 2x: 168px -->
+              <source type="image/webp" srcset="img/necklace-detail-desktop-img@1x.webp 1x, img/necklace-detail-desktop-img@2x.webp 2x">
+              <!-- 1х: 84px; 2x: 168px -->
+              <img class="cart-product-single__img"
+                  srcset="
+                    img/necklace-detail-desktop-img@2x.jpg 2x,
+                    img/necklace-detail-desktop-img@1x.jpg 1x"
+                  src="img/necklace-detail-desktop-img@1x.jpg" width="84" height="79" alt="Necklace detail">
+            </picture>
+            <div class="cart-product-single__info">
+              <h3 class="cart-product-single__title">
+                <a class="cart-product-single__link" href="product.html">Gold Necklace </a>
+              </h3>
+              <p class="cart-product-single__price">$ 115</p>
+            </div>
+            <div class="cart-product-single__counter">
+              <button class="cart-product-single__plus">
+                <span class="visually-hidden">Добавить единицу товара</span>
+              </button>
+              <p class="cart-product-single__num">1</p>
+              <button class="cart-product-single__minus">
+                <span class="visually-hidden">Убрать единицу товара</span>
+              </button>
+            </div>
+          </li>
+        </ul>
+        <div class="cart-modal__totals">
+          <p class="cart-modal__count-total-text">
+            You have
+            <span class="cart-modal__count-total-value">1</span>
+            item in the cart
+          </p>
+          <p class="cart-modal__price-total-text">
+            Cart subtotal: $
+            <span class="cart-modal__price-total-value">115</span>
+          </p>
+        </div>
+        <div class="cart-modal__buttons">
+          <a class="cart-modal__button button button--transparent" href="catalog.html">Continue shopping</a>
+          <a class="cart-modal__button button" href="cart.html">Checkout</a>
+        </div>
+        <button class="modal__close">
+          <span class="visually-hidden">Закрыть окно</span>
+        </button>
       </div>
     </div>
   </section>
 </div>
-<script src="js/main.js"></script>
 <script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

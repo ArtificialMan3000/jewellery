@@ -13,7 +13,7 @@
   }
 
   &--small {
-    height: 300px;
+    min-height: 300px;
 
     @media (max-width: $mobile-width-max) {
       align-items: flex-end;
@@ -22,7 +22,7 @@
   }
 
   &--big {
-    height: 630px;
+    min-height: 630px;
     justify-content: flex-end;
     align-items: flex-end;
 

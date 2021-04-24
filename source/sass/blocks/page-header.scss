@@ -78,7 +78,7 @@
 .page-header__login {
   margin-top: 24px;
   margin-left: auto;
-  margin-right: 38px;
+  margin-right: 28px;
 
   @media (max-width: $tablet-width-max) {
     display: none;
@@ -148,4 +148,6 @@
 .page-header--absolute {
   position: absolute;
   z-index: 1;
+  height: 100vh;
+  overflow-y: scroll;
 }

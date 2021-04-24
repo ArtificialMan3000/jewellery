@@ -19,6 +19,7 @@ window.menu = (function () {
 
   // Прячет меню
   var closeMainMenu = function () {
+    document.body.classList.remove('body-no-scroll');
     if (burger) {
       burger.classList.remove('burger--white');
     }
@@ -40,6 +41,7 @@ window.menu = (function () {
 
   // Открывает меню
   var openMainMenu = function () {
+    document.body.classList.add('body-no-scroll');
     if (burger) {
       burger.classList.add('burger--white');
     }

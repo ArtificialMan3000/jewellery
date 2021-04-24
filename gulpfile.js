@@ -15,8 +15,6 @@ var svgstore = require('gulp-svgstore');
 var posthtml = require('gulp-posthtml');
 var include = require('posthtml-include');
 var del = require('del');
-var uglify = require('gulp-uglify');
-var htmlmin = require('gulp-htmlmin');
 var concat = require('gulp-concat');
 
 gulp.task('css', function () {
@@ -67,13 +65,12 @@ gulp.task('html', function () {
     .pipe(posthtml([
       include()
     ]))
-    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('build'));
 });
 
 gulp.task('js', function (done) {
   gulp.src([
-    'source/js/vendor/*.js',
+    'source/js/media-query.js',
     'source/js/filter.js',
     'source/js/menu.js',
     'source/js/accordion.js',

@@ -64,6 +64,7 @@ window.accordion = (function () {
     // closeAccordionItems();
     if (accordionTitles && accordionTitles.length > 0) {
       for (var i = 0; i < accordionTitles.length; i++) {
+        accordionTitles[i].setAttribute('tabindex', '0');
         addAccordionTitleClickHandler(accordionTitles[i]);
       }
     }

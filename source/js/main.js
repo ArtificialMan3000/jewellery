@@ -35,4 +35,8 @@ window.main = (function () {
   var galleryElem = document.querySelector('.gallery__list');
   var galleryMasonry = window.gallery.createGalleryInstance(galleryElem);
   galleryMasonry.initGallery();
+
+  return {
+    productSlider: productSlider
+  }
 })();

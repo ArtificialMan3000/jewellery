@@ -9,6 +9,7 @@
 
   @media (max-width: $mobile-width-max) {
     flex-wrap: wrap;
+    justify-content: center;
     position: relative;
   }
 }

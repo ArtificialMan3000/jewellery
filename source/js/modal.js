@@ -24,7 +24,7 @@ window.modal = (function () {
     // Показывает модальное окно
     modal.showModal = function () {
       modal.modal.classList.add('modal--show');
-      document.body.classList.add('body-modal-open');
+      document.body.classList.add('body-no-scroll');
       if (modal.focusField) {
         modal.focusField.focus();
       }
@@ -33,7 +33,7 @@ window.modal = (function () {
     // Скрывает модальное окно
     modal.hideModal = function () {
       modal.modal.classList.remove('modal--show');
-      document.body.classList.remove('body-modal-open');
+      document.body.classList.remove('body-no-scroll');
     };
 
     // Инициализирует модальное окно

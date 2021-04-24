@@ -2,6 +2,19 @@
   width: 430px;
   margin: auto;
   // margin-top: 100px; // Временно
+
+  @media (max-width: $tablet-width-max) {
+    width: 442px;
+    // margin-top: 80px; // Временно
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 270px;
+    // margin-top: 50px; // Временно
+  }
+}
+
+.login-modal__content {
   padding-left: 45px;
   padding-right: 45px;
   padding-top: 198px;
@@ -14,16 +27,13 @@
   box-shadow: 0 5px 32px rgba(226, 221, 215, 0.24);
 
   @media (max-width: $tablet-width-max) {
-    width: 442px;
     padding-left: 51px;
     padding-right: 51px;
-    // margin-top: 80px; // Временно
     background-image: url("../img/sweet-ice-cream-photography-tablet-bg@1x.jpg");
   }
 
   @media (max-width: $mobile-width-max) {
-    width: 270px;
-    // margin-top: 50px; // Временно
+
     padding-top: 129px;
     padding-bottom: 25px;
     padding-left: 15px;

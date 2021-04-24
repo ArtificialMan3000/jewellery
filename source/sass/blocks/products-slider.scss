@@ -60,9 +60,11 @@
 
 .products-slider__list {
   @include list-reset();
+  display: flex;
+  width: 100%;
 }
 
-.products-slider__pages-list {
+.products-slider__pagination-list {
   @include list-reset();
   display: flex;
   align-self: center;
@@ -77,7 +79,22 @@
   }
 }
 
-.products-slider__pages-button {
+.products-slider__pagination-indicator {
+  align-self: center;
+  margin-top: 53px;
+  font-weight: 500;
+  color: $black;
+
+  @media (max-width: $tablet-width-max) {
+    margin-top: 43px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-top: 33px;
+  }
+}
+
+.products-slider__pagination-button {
   border: 0;
   background-color: transparent;
   font-weight: 500;

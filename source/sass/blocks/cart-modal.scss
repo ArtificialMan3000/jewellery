@@ -1,6 +1,19 @@
 .cart-modal__window {
   width: 500px;
   // margin-top: 372px; // Временно
+
+  @media (max-width: $tablet-width-max) {
+    width: 502px;
+    // margin-top: 258px; // Временно
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 290px;
+    // margin-top: 117px; // Временно
+  }
+}
+
+.cart-modal__content {
   padding-left: 35px;
   padding-right: 35px;
   padding-top: 55px;
@@ -9,15 +22,11 @@
   box-shadow: 0 4px 32px rgba(121, 121, 121, 0.24);
 
   @media (max-width: $tablet-width-max) {
-    width: 502px;
-    // margin-top: 258px; // Временно
     padding-left: 30px;
     padding-right: 30px;
   }
 
   @media (max-width: $mobile-width-max) {
-    width: 290px;
-    // margin-top: 117px; // Временно
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 45px;

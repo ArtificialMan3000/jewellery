@@ -5,14 +5,20 @@
   @media (max-width: $tablet-width-max) {
     display: block;
   }
+
+  &--hide {
+    @media (max-width: $tablet-width-max) {
+      display: none;
+    }
+  }
 }
 
 .filter__form {
   @media (max-width: $tablet-width-max) {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    position: relative;
+    // top: 0;
+    // left: 0;
+    // right: 0;
     display: none;
     padding-top: 42px;
     background-color: $white;
@@ -79,6 +85,7 @@
 }
 
 .filter__form .form-title {
+  position: relative;
   margin: 0;
   margin-top: -1px;
   font-weight: 500;
@@ -125,6 +132,7 @@
   }
 
   input[type="checkbox"] {
+    flex-shrink: 0;
     appearance: none;
     width: 15px;
     height: 15px;
@@ -142,6 +150,32 @@
     font-weight: 500;
     font-size: 14px;
     cursor: pointer;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 9px;
+    padding-bottom: 8px;
+    border: none;
+    border-bottom: 1px solid $gray-dark;
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  &::placeholder {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: $gray-light;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 0 3px $brand-color;
   }
 }
 
