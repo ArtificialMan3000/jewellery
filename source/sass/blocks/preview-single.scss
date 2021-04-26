@@ -27,7 +27,7 @@
     align-items: flex-end;
 
     @media (max-width: $tablet-width-max) {
-      height: 300px;
+      min-height: 300px;
       align-items: stretch;
     }
 
