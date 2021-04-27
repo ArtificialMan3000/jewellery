@@ -60,6 +60,10 @@
     background-color: transparent;
     cursor: pointer;
   }
+
+  &--hide {
+    display: none;
+  }
 }
 
 .filter__form .form-section {
@@ -160,6 +164,7 @@
     padding-bottom: 8px;
     border: none;
     border-bottom: 1px solid $gray-dark;
+    border-radius: 0;
     background-color: transparent;
     font-weight: 500;
     font-size: 14px;

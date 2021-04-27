@@ -209,6 +209,9 @@ window.filter = (function () {
 
   // Инициализирует модуль
   var initFilter = function () {
+    // Убираем скрытие для крестика
+    filterCloseButton.classList.remove('filter__close--hide');
+
     // Скрываем поля ввода диапазона цен
     hidePriceInputs();
     // Вешаем на кнопку открытия фильтра обработчик для открытия фильтра
@@ -896,16 +899,22 @@ window.main = (function () {
 
   // Инициализируем хранение данных формы
   var loginForm = document.querySelector('#login_form');
-  window.formStorage.initFormStorage(loginForm, ['login-email']);
+  if (loginForm) {
+    window.formStorage.initFormStorage(loginForm, ['login-email']);
+  }
 
   // Инициализируем слайдер
   var productSlider = window.slider.createSliderInstance('.products-slider');
-  productSlider.initSlider();
+  if (productSlider) {
+    productSlider.initSlider();
+  }
 
   // Инициализирует галерею
   var galleryElem = document.querySelector('.gallery__list');
-  var galleryMasonry = window.gallery.createGalleryInstance(galleryElem);
-  galleryMasonry.initGallery();
+  if (galleryElem) {
+    var galleryMasonry = window.gallery.createGalleryInstance(galleryElem);
+    galleryMasonry.initGallery();
+  }
 
   return {
     productSlider: productSlider

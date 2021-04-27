@@ -148,6 +148,9 @@ window.filter = (function () {
 
   // Инициализирует модуль
   var initFilter = function () {
+    // Убираем скрытие для крестика
+    filterCloseButton.classList.remove('filter__close--hide');
+
     // Скрываем поля ввода диапазона цен
     hidePriceInputs();
     // Вешаем на кнопку открытия фильтра обработчик для открытия фильтра
