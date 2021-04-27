@@ -18,7 +18,12 @@
 
 .page-header--menu-open {
   @media (max-width: $tablet-width-max) {
+    padding-bottom: 80px;
     background-color: $brand-color;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-bottom: 50px;
   }
 }
 
