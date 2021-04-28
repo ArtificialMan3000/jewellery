@@ -209,8 +209,13 @@ window.filter = (function () {
 
   // Инициализирует модуль
   var initFilter = function () {
+    if (!filterForm) {
+      return;
+    }
     // Убираем скрытие для крестика
-    filterCloseButton.classList.remove('filter__close--hide');
+    if (filterCloseButton) {
+      filterCloseButton.classList.remove('filter__close--hide');
+    }
 
     // Скрываем поля ввода диапазона цен
     hidePriceInputs();
@@ -918,5 +923,5 @@ window.main = (function () {
 
   return {
     productSlider: productSlider
-  }
+  };
 })();

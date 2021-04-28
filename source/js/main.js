@@ -44,5 +44,5 @@ window.main = (function () {
 
   return {
     productSlider: productSlider
-  }
+  };
 })();
